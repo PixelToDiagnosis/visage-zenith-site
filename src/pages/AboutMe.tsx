@@ -10,8 +10,10 @@ const AboutMe = () => {
   return (
     <>
       <section className="section-padding bg-off-white">
-        <div className="container-wide grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img src={doctorImage} alt={t("Dr Marie-Eve Bousmar", "Dr Marie-Eve Bousmar")} className="w-full max-w-md mx-auto rounded-sm shadow-lg" />
+        <div className="container-wide grid md:grid-cols-2 gap-12 md:gap-20 items-stretch">
+          <div className="overflow-hidden rounded-sm shadow-lg">
+            <img src={doctorImage} alt={t("Dr Marie-Eve Bousmar", "Dr Marie-Eve Bousmar")} className="w-full h-full object-cover object-top" />
+          </div>
           <div>
             <div className="gold-line mb-6" />
             <h1 className="heading-display mb-6">
