@@ -36,19 +36,24 @@ const Index = () => {
             <div className="gold-line mb-8" />
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-off-white mb-6">
               {t(
-                "Révélez votre beauté naturelle grâce à la médecine esthétique.",
-                "Ontdek uw natuurlijke schoonheid met esthetische geneeskunde."
+                "Révéler votre beauté naturelle grâce à une médecine esthétique subtile et personnalisée.",
+                "Uw natuurlijke schoonheid onthullen dankzij subtiele en gepersonaliseerde esthetische geneeskunde."
               )}
             </h1>
             <p className="font-sans text-base md:text-lg font-light text-off-white/80 mb-10 max-w-lg">
               {t(
-                "Des traitements personnalisés pour un résultat naturel et harmonieux.",
-                "Gepersonaliseerde behandelingen voor een natuurlijk en harmonieus resultaat."
+                "Une approche médicale et holistique du vieillissement, intégrant esthétique, santé, nutrition, sommeil et équilibre de vie.",
+                "Een medische en holistische benadering van veroudering, met aandacht voor esthetiek, gezondheid, voeding, slaap en levensbalans."
               )}
             </p>
-            <CTAButton to="https://www.doctoranytime.be/nl/d/esthetisch-arts/marie-eve-bousmar">
-              {t("Prendre rendez-vous", "Maak een afspraak")}
-            </CTAButton>
+            <div className="flex flex-wrap gap-4">
+              <CTAButton to="https://www.doctoranytime.be/nl/d/esthetisch-arts/marie-eve-bousmar">
+                {t("Prendre rendez-vous", "Maak een afspraak")}
+              </CTAButton>
+              <CTAButton to="/services" variant="outline">
+                {t("Découvrir les traitements", "Ontdek de behandelingen")}
+              </CTAButton>
+            </div>
           </div>
         </div>
       </section>
