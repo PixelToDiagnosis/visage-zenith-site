@@ -234,9 +234,9 @@ const Index = () => {
           <SectionHeading title="Contact" />
           <div className="grid sm:grid-cols-3 gap-8">
             {[
-              { label: t("Téléphone", "Telefoon"), value: "+32 2 123 45 67" },
-              { label: "Email", value: "info@dr-esthetique.be" },
-              { label: t("Adresse", "Adres"), value: "Bruxelles, Belgique" },
+              { label: t("Téléphone", "Telefoon"), value: "+32 474 63 60 22" },
+              { label: "Email", value: "dr.mbousmar@gmail.com" },
+              { label: t("Adresse", "Adres"), value: t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken") },
             ].map((item, i) => (
               <div key={i}>
                 <p className="font-serif text-lg mb-1">{item.label}</p>
