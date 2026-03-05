@@ -22,25 +22,25 @@ const AboutMe = () => {
             <p className="body-text mb-4">
               {t(
                 "Diplômée en médecine de l'Université Catholique de Louvain, je me suis spécialisée en médecine esthétique à la Swiss Aesthetic Medicine and Business Academy (SAMBA).",
-                "Afgestudeerd in de geneeskunde aan de Université Catholique de Louvain, heb ik mij gespecialiseerd in esthetische geneeskunde aan de Swiss Aesthetic Medicine and Business Academy (SAMBA)."
+                "Afgestudeerd in de geneeskunde aan de Université Catholique de Louvain, heb ik mij verder gespecialiseerd in esthetische geneeskunde aan de Swiss Aesthetic Medicine and Business Academy (SAMBA)."
               )}
             </p>
             <p className="body-text mb-4">
               {t(
                 "Ma pratique repose sur une conviction essentielle : la médecine esthétique doit préserver l'harmonie et l'authenticité du visage, en apportant des résultats subtils et naturels.",
-                "Mijn praktijk is gebaseerd op een essentiële overtuiging: esthetische geneeskunde moet de harmonie en authenticiteit van het gezicht bewaren, met subtiele en natuurlijke resultaten."
+                "Mijn praktijk is gebaseerd op een essentiële overtuiging: esthetische geneeskunde moet de harmonie en authenticiteit van het gezicht respecteren, met subtiele en natuurlijke resultaten."
               )}
             </p>
             <p className="body-text mb-4">
               {t(
                 "J'aborde le vieillissement dans une vision globale et holistique, en tenant compte de facteurs essentiels tels que la nutrition, le sommeil, l'activité physique et l'équilibre de vie, afin d'accompagner chaque patient de manière personnalisée.",
-                "Ik benader veroudering vanuit een globale en holistische visie, rekening houdend met essentiële factoren zoals voeding, slaap, lichaamsbeweging en levensbalans, om elke patiënt op een gepersonaliseerde manier te begeleiden."
+                "Ik benader veroudering vanuit een globale en holistische visie, waarbij rekening wordt gehouden met essentiële factoren zoals voeding, slaap, lichaamsbeweging en een evenwichtige levensstijl, om elke patiënt op een persoonlijke manier te begeleiden."
               )}
             </p>
             <p className="body-text">
               {t(
                 "Je poursuis continuellement des formations aux techniques les plus avancées afin d'offrir des soins sûrs, modernes et adaptés à chaque visage.",
-                "Ik volg voortdurend opleidingen in de meest geavanceerde technieken om veilige, moderne en op elk gezicht afgestemde behandelingen te bieden."
+                "Ik blijf mij voortdurend bijscholen in de meest geavanceerde technieken om veilige, moderne en op elk gezicht afgestemde behandelingen aan te bieden."
               )}
             </p>
           </div>
