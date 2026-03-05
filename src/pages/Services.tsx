@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
 import { Sparkles } from "lucide-react";
+import treatmentImage from "@/assets/treatment-injection.jpg";
 
 const services = [
   { slug: "botox", fr: "Botox", nl: "Botox", descFr: "Traitement des rides d'expression pour un visage lissé et rajeuni.", descNl: "Behandeling van expressierimpels voor een gladder en jonger gezicht." },
@@ -39,6 +40,14 @@ const Services = () => {
               <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
             </Link>
           ))}
+        </div>
+
+        <div className="mt-16 overflow-hidden rounded-sm shadow-lg">
+          <img
+            src={treatmentImage}
+            alt={t("Traitement esthétique en consultation", "Esthetische behandeling tijdens consultatie")}
+            className="w-full h-[400px] object-cover object-center"
+          />
         </div>
       </div>
     </section>
