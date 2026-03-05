@@ -86,7 +86,7 @@ const Contact = () => {
             {/* Info */}
             <div className="space-y-8">
               {[
-                { icon: Phone, label: t("Téléphone", "Telefoon"), value: "0474 636 022" },
+                { icon: Phone, label: t("Téléphone", "Telefoon"), value: "+32 474 63 60 22" },
                 { icon: Mail, label: "Email", value: "dr.mbousmar@gmail.com" },
                 { icon: MapPin, label: t("Adresse", "Adres"), value: t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken") },
               ].map((item, i) => (
