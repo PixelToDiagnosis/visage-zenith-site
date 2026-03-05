@@ -46,7 +46,7 @@ const Services = () => {
           <img
             src={treatmentImage}
             alt={t("Traitement esthétique en consultation", "Esthetische behandeling tijdens consultatie")}
-            className="w-full h-[400px] object-cover object-center"
+            className="w-full h-[400px] object-cover object-top"
           />
         </div>
       </div>
