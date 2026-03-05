@@ -38,7 +38,7 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg mb-4">{t("Traitements", "Behandelingen")}</h4>
             <div className="space-y-2">
-              {["Botox", t("Acide hyaluronique", "Hyaluronzuur"), "Microneedling", "Peelings"].map((item) => (
+              {["Botox", t("Acide hyaluronique", "Hyaluronzuur"), t("Inducteurs de collagène", "Collageenstimulatie")].map((item) => (
                 <p key={item} className="text-sm opacity-70">{item}</p>
               ))}
             </div>
@@ -57,7 +57,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 opacity-70" />
-                <span className="text-sm opacity-70">Bruxelles, Belgique</span>
+                <span className="text-sm opacity-70">{t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken")}</span>
               </div>
             </div>
           </div>
