@@ -10,10 +10,6 @@ const treatments = [
   { slug: "jawline", fr: "Jawline", nl: "Jawline" },
   { slug: "cernes", fr: "Cernes", nl: "Wallen" },
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters" },
-  { slug: "microneedling", fr: "Microneedling", nl: "Microneedling" },
-  { slug: "peeling-visage", fr: "Peelings", nl: "Peelings" },
-  { slug: "prp-visage", fr: "PRP Visage", nl: "PRP Gezicht" },
-  { slug: "laser", fr: "Laser", nl: "Laser" },
 ];
 
 const Header = () => {

@@ -19,7 +19,7 @@ const queryClient = new QueryClient();
 
 const treatmentSlugs = [
   "botox", "acide-hyaluronique", "injection-levres", "jawline", "cernes",
-  "skin-boosters", "microneedling", "peeling-visage", "prp-visage", "laser"
+  "skin-boosters"
 ];
 
 const App = () => (

@@ -10,10 +10,6 @@ const services = [
   { slug: "jawline", fr: "Jawline", nl: "Jawline", descFr: "Redéfinition de l'ovale du visage.", descNl: "Herdefinitie van de gezichtscontouren." },
   { slug: "cernes", fr: "Cernes", nl: "Wallen", descFr: "Correction des cernes et du regard fatigué.", descNl: "Correctie van wallen en een vermoeid uiterlijk." },
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters", descFr: "Hydratation intense et éclat de la peau.", descNl: "Intense hydratatie en huidglans." },
-  { slug: "microneedling", fr: "Microneedling", nl: "Microneedling", descFr: "Stimulation du collagène pour une peau renouvelée.", descNl: "Collageenstimulatie voor een vernieuwde huid." },
-  { slug: "peeling-visage", fr: "Peelings", nl: "Peelings", descFr: "Renouvellement cellulaire et éclat du teint.", descNl: "Celvernieuwing en stralende teint." },
-  { slug: "prp-visage", fr: "PRP Visage", nl: "PRP Gezicht", descFr: "Régénération naturelle par plasma riche en plaquettes.", descNl: "Natuurlijke regeneratie door plaatjesrijk plasma." },
-  { slug: "laser", fr: "Laser", nl: "Laser", descFr: "Traitement laser pour pigmentation, texture et rajeunissement.", descNl: "Laserbehandeling voor pigmentatie, textuur en verjonging." },
 ];
 
 const Services = () => {
