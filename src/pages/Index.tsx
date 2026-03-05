@@ -46,7 +46,7 @@ const Index = () => {
                 "Gepersonaliseerde behandelingen voor een natuurlijk en harmonieus resultaat."
               )}
             </p>
-            <CTAButton to="/contact">
+            <CTAButton to="https://www.doctoranytime.be/nl/d/esthetisch-arts/marie-eve-bousmar">
               {t("Prendre rendez-vous", "Maak een afspraak")}
             </CTAButton>
           </div>
@@ -222,7 +222,7 @@ const Index = () => {
               "Boek uw persoonlijk consult en ontdek de behandelingen die bij uw behoeften passen."
             )}
           </p>
-          <CTAButton to="/contact">
+          <CTAButton to="https://www.doctoranytime.be/nl/d/esthetisch-arts/marie-eve-bousmar">
             {t("Prendre rendez-vous", "Maak een afspraak")}
           </CTAButton>
         </div>

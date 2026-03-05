@@ -89,12 +89,14 @@ const Header = () => {
           >
             {lang === "fr" ? "NL" : "FR"}
           </button>
-          <Link
-            to="/contact"
+          <a
+            href="https://www.doctoranytime.be/nl/d/esthetisch-arts/marie-eve-bousmar"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-5 py-2 bg-accent text-accent-foreground body-small font-normal tracking-wide hover:opacity-90 transition-opacity rounded-sm"
           >
             {t("Rendez-vous", "Afspraak")}
-          </Link>
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -138,13 +140,15 @@ const Header = () => {
             >
               {lang === "fr" ? "NL" : "FR"}
             </button>
-            <Link
-              to="/contact"
+            <a
+              href="https://www.doctoranytime.be/nl/d/esthetisch-arts/marie-eve-bousmar"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-2 bg-accent text-accent-foreground body-small font-normal rounded-sm"
               onClick={() => setMobileOpen(false)}
             >
               {t("Rendez-vous", "Afspraak")}
-            </Link>
+            </a>
           </div>
         </div>
       )}
