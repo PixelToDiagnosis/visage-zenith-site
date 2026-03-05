@@ -21,14 +21,26 @@ const AboutMe = () => {
             </h1>
             <p className="body-text mb-4">
               {t(
-                "Passionnée par la beauté naturelle et l'harmonie du visage, Dr Marie-Eve Bousmar exerce la médecine esthétique depuis plus de 15 ans. Son approche allie expertise médicale pointue et sensibilité artistique pour offrir à chaque patient un résultat sur mesure.",
-                "Gepassioneerd door natuurlijke schoonheid en gezichtsharmonie, oefent Dr Marie-Eve Bousmar al meer dan 15 jaar esthetische geneeskunde uit. Haar aanpak combineert scherpe medische expertise met artistieke gevoeligheid om elke patiënt een resultaat op maat te bieden."
+                "Diplômée en médecine de l'Université Catholique de Louvain, je me suis spécialisée en médecine esthétique à la Swiss Aesthetic Medicine and Business Academy (SAMBA).",
+                "Afgestudeerd in de geneeskunde aan de Université Catholique de Louvain, heb ik mij gespecialiseerd in esthetische geneeskunde aan de Swiss Aesthetic Medicine and Business Academy (SAMBA)."
+              )}
+            </p>
+            <p className="body-text mb-4">
+              {t(
+                "Ma pratique repose sur une conviction essentielle : la médecine esthétique doit préserver l'harmonie et l'authenticité du visage, en apportant des résultats subtils et naturels.",
+                "Mijn praktijk is gebaseerd op een essentiële overtuiging: esthetische geneeskunde moet de harmonie en authenticiteit van het gezicht bewaren, met subtiele en natuurlijke resultaten."
+              )}
+            </p>
+            <p className="body-text mb-4">
+              {t(
+                "J'aborde le vieillissement dans une vision globale et holistique, en tenant compte de facteurs essentiels tels que la nutrition, le sommeil, l'activité physique et l'équilibre de vie, afin d'accompagner chaque patient de manière personnalisée.",
+                "Ik benader veroudering vanuit een globale en holistische visie, rekening houdend met essentiële factoren zoals voeding, slaap, lichaamsbeweging en levensbalans, om elke patiënt op een gepersonaliseerde manier te begeleiden."
               )}
             </p>
             <p className="body-text">
               {t(
-                "Chaque consultation est un moment d'écoute et d'échange, où vos souhaits et vos attentes sont au centre de la démarche thérapeutique.",
-                "Elk consult is een moment van luisteren en uitwisselen, waar uw wensen en verwachtingen centraal staan in de therapeutische aanpak."
+                "Je poursuis continuellement des formations aux techniques les plus avancées afin d'offrir des soins sûrs, modernes et adaptés à chaque visage.",
+                "Ik volg voortdurend opleidingen in de meest geavanceerde technieken om veilige, moderne en op elk gezicht afgestemde behandelingen te bieden."
               )}
             </p>
           </div>
