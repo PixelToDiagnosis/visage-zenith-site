@@ -11,16 +11,16 @@ const AboutMe = () => {
     <>
       <section className="section-padding bg-off-white">
         <div className="container-wide grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <img src={doctorImage} alt={t("Dr. Marie Laurent", "Dr. Marie Laurent")} className="w-full max-w-md mx-auto rounded-sm shadow-lg" />
+          <img src={doctorImage} alt={t("Dr Marie-Eve Bousmar", "Dr Marie-Eve Bousmar")} className="w-full max-w-md mx-auto rounded-sm shadow-lg" />
           <div>
             <div className="gold-line mb-6" />
             <h1 className="heading-display mb-6">
-              {t("À propos de Dr. Marie Laurent", "Over Dr. Marie Laurent")}
+              {t("À propos de Dr Marie-Eve Bousmar", "Over Dr Marie-Eve Bousmar")}
             </h1>
             <p className="body-text mb-4">
               {t(
-                "Passionnée par la beauté naturelle et l'harmonie du visage, Dr. Marie Laurent exerce la médecine esthétique depuis plus de 15 ans. Son approche allie expertise médicale pointue et sensibilité artistique pour offrir à chaque patient un résultat sur mesure.",
-                "Gepassioneerd door natuurlijke schoonheid en gezichtsharmonie, oefent Dr. Marie Laurent al meer dan 15 jaar esthetische geneeskunde uit. Haar aanpak combineert scherpe medische expertise met artistieke gevoeligheid om elke patiënt een resultaat op maat te bieden."
+                "Passionnée par la beauté naturelle et l'harmonie du visage, Dr Marie-Eve Bousmar exerce la médecine esthétique depuis plus de 15 ans. Son approche allie expertise médicale pointue et sensibilité artistique pour offrir à chaque patient un résultat sur mesure.",
+                "Gepassioneerd door natuurlijke schoonheid en gezichtsharmonie, oefent Dr Marie-Eve Bousmar al meer dan 15 jaar esthetische geneeskunde uit. Haar aanpak combineert scherpe medische expertise met artistieke gevoeligheid om elke patiënt een resultaat op maat te bieden."
               )}
             </p>
             <p className="body-text">
