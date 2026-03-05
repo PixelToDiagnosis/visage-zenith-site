@@ -1,14 +1,10 @@
-import { useParams } from "react-router-dom";
 import TreatmentPage from "@/components/TreatmentPage";
 import { treatmentsData } from "@/data/treatments";
 import NotFound from "./NotFound";
 
-const TreatmentRoute = () => {
-  const { slug } = useParams<{ slug: string }>();
-  const data = slug ? treatmentsData[slug] : undefined;
-
+const TreatmentRoute = ({ slug }: { slug: string }) => {
+  const data = treatmentsData[slug];
   if (!data) return <NotFound />;
-
   return <TreatmentPage data={data} />;
 };
 

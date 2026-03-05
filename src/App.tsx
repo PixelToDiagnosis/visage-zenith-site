@@ -39,7 +39,7 @@ const App = () => (
               <Route path="/free" element={<FreePage />} />
               <Route path="/contact" element={<Contact />} />
               {treatmentSlugs.map(slug => (
-                <Route key={slug} path={`/${slug}`} element={<TreatmentRoute />} />
+                <Route key={slug} path={`/${slug}`} element={<TreatmentRoute slug={slug} />} />
               ))}
               <Route path="*" element={<NotFound />} />
             </Routes>
