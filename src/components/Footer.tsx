@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container-wide section-padding">
         <div className="grid md:grid-cols-4 gap-12">
           <div>
-            <h3 className="font-serif text-2xl font-light mb-4">Dr. Esthétique</h3>
+            <h3 className="font-serif text-2xl font-light mb-4">Dr Marie-Eve Bousmar</h3>
             <p className="text-sm font-light opacity-70 leading-relaxed">
               {t(
                 "Médecine esthétique de qualité pour des résultats naturels et harmonieux.",
@@ -65,7 +65,7 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-primary-foreground/10 text-center">
           <p className="text-xs opacity-50">
-            © {new Date().getFullYear()} Dr. Esthétique. {t("Tous droits réservés.", "Alle rechten voorbehouden.")}
+            © {new Date().getFullYear()} Dr Marie-Eve Bousmar. {t("Tous droits réservés.", "Alle rechten voorbehouden.")}
           </p>
         </div>
       </div>
