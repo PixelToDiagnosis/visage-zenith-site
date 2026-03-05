@@ -66,7 +66,7 @@ const AboutMe = () => {
               "Maak een afspraak voor een persoonlijk consult en ontdek hoe esthetische geneeskunde uw natuurlijke schoonheid kan onthullen."
             )}
           </p>
-          <CTAButton to="/contact">{t("Prendre rendez-vous", "Maak een afspraak")}</CTAButton>
+          <CTAButton to="https://www.doctoranytime.be/nl/d/esthetisch-arts/marie-eve-bousmar">{t("Prendre rendez-vous", "Maak een afspraak")}</CTAButton>
         </div>
       </section>
     </>

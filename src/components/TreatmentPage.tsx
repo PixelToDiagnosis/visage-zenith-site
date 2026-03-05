@@ -131,7 +131,7 @@ const TreatmentPage = ({ data }: { data: TreatmentData }) => {
               "Maak een afspraak voor een persoonlijk consult."
             )}
           </p>
-          <CTAButton to="/contact">{t("Prendre rendez-vous", "Maak een afspraak")}</CTAButton>
+          <CTAButton to="https://www.doctoranytime.be/nl/d/esthetisch-arts/marie-eve-bousmar">{t("Prendre rendez-vous", "Maak een afspraak")}</CTAButton>
         </div>
       </section>
     </>
