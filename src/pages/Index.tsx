@@ -63,7 +63,7 @@ const Index = () => {
           <div>
             <div className="gold-line mb-6" />
             <h2 className="heading-section mb-6">
-              {t("Dr. Marie Laurent", "Dr. Marie Laurent")}
+              {t("Dr Marie-Eve Bousmar", "Dr Marie-Eve Bousmar")}
             </h2>
             <p className="body-text mb-4">
               {t(
