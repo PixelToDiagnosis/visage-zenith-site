@@ -86,9 +86,9 @@ const Contact = () => {
             {/* Info */}
             <div className="space-y-8">
               {[
-                { icon: Phone, label: t("Téléphone", "Telefoon"), value: "+32 2 123 45 67" },
-                { icon: Mail, label: "Email", value: "info@dr-esthetique.be" },
-                { icon: MapPin, label: t("Adresse", "Adres"), value: "Avenue Louise 123, 1050 Bruxelles" },
+                { icon: Phone, label: t("Téléphone", "Telefoon"), value: "0474 636 022" },
+                { icon: Mail, label: "Email", value: "dr.mbousmar@gmail.com" },
+                { icon: MapPin, label: t("Adresse", "Adres"), value: t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken") },
               ].map((item, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <item.icon className="w-5 h-5 text-gold mt-1" />
@@ -100,7 +100,7 @@ const Contact = () => {
               ))}
 
               <a
-                href="https://wa.me/3221234567"
+                href="https://wa.me/32474636022"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-foreground font-sans text-sm tracking-widest uppercase rounded-sm hover:opacity-90 transition-opacity"
