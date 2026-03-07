@@ -17,7 +17,7 @@ const AboutMe = () => {
           <div>
             <div className="gold-line mb-6" />
             <h1 className="heading-display mb-6">
-              {t("À propos de Dr Marie-Eve Bousmar", "Over Dr Marie-Eve Bousmar")}
+              {t("À propos de Dr Marie-Eve Bousmar", "Over mij")}
             </h1>
             <p className="body-text mb-4">
               {t(
