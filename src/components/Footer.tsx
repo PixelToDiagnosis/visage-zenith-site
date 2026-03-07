@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="space-y-2">
               {[
                 { path: "/", label: t("Accueil", "Home") },
-                { path: "/services", label: "Services" },
+                { path: "/services", label: t("Traitements", "Behandelingen") },
                 { path: "/about", label: t("À propos", "Over mij") },
                 { path: "/contact", label: "Contact" },
               ].map((item) => (
