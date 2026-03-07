@@ -1,7 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
-import { Clock, Shield, CheckCircle } from "lucide-react";
+import { Clock, Shield, CheckCircle, Euro } from "lucide-react";
 
 export interface TreatmentData {
   slug: string;
@@ -25,6 +25,8 @@ export interface TreatmentData {
   safetyNl: string;
   faqFr: { q: string; a: string }[];
   faqNl: { q: string; a: string }[];
+  priceFr?: string;
+  priceNl?: string;
 }
 
 const TreatmentPage = ({ data }: { data: TreatmentData }) => {
@@ -104,8 +106,21 @@ const TreatmentPage = ({ data }: { data: TreatmentData }) => {
         </div>
       </section>
 
+      {/* Price */}
+      {(data.priceFr || data.priceNl) && (
+        <section className="section-padding bg-cream">
+          <div className="container-narrow">
+            <div className="flex items-center gap-3 mb-6">
+              <Euro className="w-6 h-6 text-gold" />
+              <h3 className="heading-subsection">{t("Prix", "Prijs")}</h3>
+            </div>
+            <p className="body-text">{isFr ? data.priceFr : data.priceNl}</p>
+          </div>
+        </section>
+      )}
+
       {/* FAQ */}
-      <section className="section-padding bg-cream">
+      <section className="section-padding bg-off-white">
         <div className="container-narrow">
           <SectionHeading title="FAQ" centered={false} />
           <div className="space-y-6">

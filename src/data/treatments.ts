@@ -35,6 +35,8 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Wat is een touch-up?", a: "Een kleine bijwerking of correctie, ongeveer 2 weken na de behandeling, om het resultaat te optimaliseren. Een touch-up is gratis, maximum 2 weken na de injecties. Geen touch-up na fillers omdat het resultaat de dag zelf zichtbaar is." },
       { q: "Hoe vaak moet ik botox laten zetten?", a: "Het product is na ongeveer 3 maanden uitgewerkt, dus ongeveer om de 4-6 maand volgens uw behoeften." },
     ],
+    priceFr: "Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. Le prix dépend de la zone et du nombre d'unités. La première consultation est informative et gratuite. Prix indicatifs : Toxine botulique ≈ 100-150 € par zone.",
+    priceNl: "Tijdens het eerste consult stellen we samen een gepersonaliseerd behandelplan op en ontvangt u een offerte. De prijs hangt af van de zone en het aantal eenheden. Het eerste consult is informatief en gratis. Indicatieve prijzen: Botulinetoxine ≈ 100-150 € per zone.",
   },
   "acide-hyaluronique": {
     slug: "acide-hyaluronique",
