@@ -26,12 +26,14 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Quand vais-je voir les résultats ?", a: "Les premiers effets apparaissent en 3 à 5 jours. Le résultat optimal est visible après 10-14 jours." },
       { q: "Le résultat est-il naturel ?", a: "Absolument. Notre approche vise un résultat subtil et naturel, préservant l'expressivité du visage." },
       { q: "Qu'est-ce qu'un touch-up ?", a: "Un petit ajustement ou correction, environ 2 semaines après le traitement, afin d'optimiser le résultat. Le touch-up est gratuit, maximum 2 semaines après les injections. Pas de touch-up après les fillers car le résultat est visible le jour même." },
+      { q: "À quelle fréquence faut-il refaire le Botox ?", a: "Le produit se résorbe après environ 3 mois, il est donc recommandé de renouveler le traitement tous les 4 à 6 mois selon vos besoins." },
     ],
     faqNl: [
       { q: "Is Botox pijnlijk?", a: "De injecties zijn vrijwel pijnloos dankzij het gebruik van zeer fijne naalden. Een licht prikgevoel kan worden ervaren." },
       { q: "Wanneer zie ik resultaten?", a: "De eerste effecten verschijnen na 3 tot 5 dagen. Het optimale resultaat is zichtbaar na 10-14 dagen." },
       { q: "Is het resultaat natuurlijk?", a: "Absoluut. Onze aanpak streeft naar een subtiel en natuurlijk resultaat, met behoud van de expressiviteit van het gezicht." },
       { q: "Wat is een touch-up?", a: "Een kleine bijwerking of correctie, ongeveer 2 weken na de behandeling, om het resultaat te optimaliseren. Een touch-up is gratis, maximum 2 weken na de injecties. Geen touch-up na fillers omdat het resultaat de dag zelf zichtbaar is." },
+      { q: "Hoe vaak moet ik botox laten zetten?", a: "Het product is na ongeveer 3 maanden uitgewerkt, dus ongeveer om de 4-6 maand volgens uw behoeften." },
     ],
   },
   "acide-hyaluronique": {
