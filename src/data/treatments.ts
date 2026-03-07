@@ -66,6 +66,8 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Hoe lang duren de resultaten?", a: "Tussen 8 en 18 maanden afhankelijk van de behandelde zone en het gebruikte product." },
       { q: "Is er een herstelperiode?", a: "Heel weinig. Lichte zwelling of roodheid kan 24-48 uur verschijnen." },
     ],
+    priceFr: "Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. La première consultation est entièrement informative et gratuite. Prix indicatif : 350 €/ampoule.",
+    priceNl: "Tijdens het eerste consult stellen we samen een gepersonaliseerd behandelplan op en ontvangt u een offerte. Het eerste consult is volledig informatief en gratis. Indicatieve prijs: 350 €/ampul.",
   },
   "injection-levres": {
     slug: "injection-levres",
