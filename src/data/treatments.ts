@@ -164,6 +164,8 @@ export const treatmentsData: Record<string, TreatmentData> = {
     safetyNl: "Zachte en goed verdragen behandeling. Lichte roodheid mogelijk gedurende enkele uren.",
     faqFr: [{ q: "Combien de séances faut-il ?", a: "Un protocole de 2-3 séances espacées de 3 semaines est recommandé pour des résultats optimaux." }],
     faqNl: [{ q: "Hoeveel sessies zijn er nodig?", a: "Een protocol van 2-3 sessies met 3 weken tussentijd wordt aanbevolen voor optimale resultaten." }],
+    priceFr: "Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. La première consultation est entièrement informative et gratuite. Prix indicatif : 250 €/séance.",
+    priceNl: "Tijdens het eerste consult stellen we samen een gepersonaliseerd behandelplan op en ontvangt u een offerte. Het eerste consult is volledig informatief en gratis. Indicatieve prijs: 250 €/sessie.",
   },
   microneedling: {
     slug: "microneedling",
