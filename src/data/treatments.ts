@@ -25,11 +25,13 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Le Botox est-il douloureux ?", a: "Les injections sont pratiquement indolores grâce à l'utilisation d'aiguilles très fines. Une sensation de légère piqûre peut être ressentie." },
       { q: "Quand vais-je voir les résultats ?", a: "Les premiers effets apparaissent en 3 à 5 jours. Le résultat optimal est visible après 10-14 jours." },
       { q: "Le résultat est-il naturel ?", a: "Absolument. Notre approche vise un résultat subtil et naturel, préservant l'expressivité du visage." },
+      { q: "Qu'est-ce qu'un touch-up ?", a: "Un petit ajustement ou correction, généralement 2 semaines après le traitement, afin d'optimiser le résultat." },
     ],
     faqNl: [
       { q: "Is Botox pijnlijk?", a: "De injecties zijn vrijwel pijnloos dankzij het gebruik van zeer fijne naalden. Een licht prikgevoel kan worden ervaren." },
       { q: "Wanneer zie ik resultaten?", a: "De eerste effecten verschijnen na 3 tot 5 dagen. Het optimale resultaat is zichtbaar na 10-14 dagen." },
       { q: "Is het resultaat natuurlijk?", a: "Absoluut. Onze aanpak streeft naar een subtiel en natuurlijk resultaat, met behoud van de expressiviteit van het gezicht." },
+      { q: "Wat is een touch-up?", a: "Een kleine bijwerking of correctie, meestal 2 weken na de behandeling, om het resultaat te optimaliseren." },
     ],
   },
   "acide-hyaluronique": {
