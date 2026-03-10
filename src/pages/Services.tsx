@@ -32,41 +32,51 @@ const Services = () => {
             "Een compleet gamma esthetische behandelingen om uw natuurlijke schoonheid te verbeteren."
           )}
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
-            <div key={s.slug}>
-              <Link
-                to={`/${s.slug}`}
-                className="group block bg-cream p-8 rounded-sm border border-border hover:shadow-lg transition-all duration-300"
-              >
-                <Sparkles className="w-6 h-6 text-gold mb-4" />
-                <h2 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
-                  {lang === "fr" ? s.fr : s.nl}
-                </h2>
-                <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
-              </Link>
-              {s.sub && (
-                <div className="mt-3 space-y-2">
-                  {s.sub.map((sub) => (
-                    <Link
-                      key={sub.slug}
-                      to={`/${sub.slug}`}
-                      className="group flex items-center gap-3 bg-off-white px-6 py-4 rounded-sm border border-border hover:shadow-md hover:border-accent/30 transition-all duration-300"
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
-                      <div>
-                        <h3 className="font-serif text-base group-hover:text-accent transition-colors">
-                          {lang === "fr" ? sub.fr : sub.nl}
-                        </h3>
-                        <p className="body-small text-muted-foreground text-xs mt-0.5">{lang === "fr" ? sub.descFr : sub.descNl}</p>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            <Link
+              key={s.slug}
+              to={`/${s.slug}`}
+              className="group block bg-cream p-8 rounded-sm border border-border hover:shadow-lg transition-all duration-300 h-full"
+            >
+              <Sparkles className="w-6 h-6 text-gold mb-4" />
+              <h2 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
+                {lang === "fr" ? s.fr : s.nl}
+              </h2>
+              <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
+            </Link>
           ))}
         </div>
+
+        {/* Sub-treatments for Acide hyaluronique */}
+        {services
+          .filter((s) => s.sub)
+          .map((s) => (
+            <div key={`${s.slug}-sub`} className="mt-6">
+              <p className="text-sm text-muted-foreground mb-3 font-medium uppercase tracking-wider">
+                {lang === "fr" ? `Soins ${s.fr}` : `${s.nl} behandelingen`}
+              </p>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {s.sub!.map((sub) => (
+                  <Link
+                    key={sub.slug}
+                    to={`/${sub.slug}`}
+                    className="group flex items-center gap-3 bg-cream px-6 py-5 rounded-sm border border-border hover:shadow-md hover:border-accent/30 transition-all duration-300"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
+                    <div>
+                      <h3 className="font-serif text-base group-hover:text-accent transition-colors">
+                        {lang === "fr" ? sub.fr : sub.nl}
+                      </h3>
+                      <p className="body-small text-muted-foreground text-xs mt-0.5">
+                        {lang === "fr" ? sub.descFr : sub.descNl}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
 
         <div className="mt-16 overflow-hidden rounded-sm shadow-lg">
           <img
