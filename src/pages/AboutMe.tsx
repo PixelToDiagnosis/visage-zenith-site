@@ -54,7 +54,7 @@ const AboutMe = () => {
             {[
               { icon: GraduationCap, title: t("Formation médicale", "Medische opleiding"), desc: t("Doctorat en médecine, Université Catholique de Louvain", "Doctoraat in de geneeskunde, Université Catholique de Louvain") },
               { icon: Award, title: t("Spécialisation", "Specialisatie"), desc: t("Diplôme universitaire en médecine esthétique et anti-âge", "Universitair diploma in esthetische en anti-aging geneeskunde") },
-              { icon: Stethoscope, title: t("Expérience", "Ervaring"), desc: t("Plus de 15 ans d'expérience en injections et traitements esthétiques", "Meer dan 15 jaar ervaring in injecties en esthetische behandelingen") },
+              
               { icon: Heart, title: t("Philosophie", "Filosofie"), desc: t("Des résultats naturels qui respectent l'harmonie de chaque visage", "Natuurlijke resultaten die de harmonie van elk gezicht respecteren") },
             ].map((item, i) => (
               <div key={i} className="text-center">
