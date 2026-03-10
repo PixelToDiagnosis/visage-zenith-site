@@ -38,7 +38,7 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg mb-4">{t("Traitements", "Behandelingen")}</h4>
             <div className="space-y-2">
-              {["Botox", t("Acide hyaluronique", "Hyaluronzuur"), t("Inducteurs de collagène", "Collageenstimulatie")].map((item) => (
+              {["Botox", t("Acide hyaluronique", "Hyaluronzuur"), "Skin Boosters", t("Inducteurs de collagène", "Collageenstimulatie")].map((item) => (
                 <p key={item} className="text-sm opacity-70">{item}</p>
               ))}
             </div>
