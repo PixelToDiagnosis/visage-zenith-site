@@ -50,7 +50,7 @@ const AboutMe = () => {
       <section className="section-padding bg-cream">
         <div className="container-wide">
           <SectionHeading title={t("Parcours & Expertise", "Opleiding & Expertise")} />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-3 gap-8">
             {[
               { icon: GraduationCap, title: t("Formation médicale", "Medische opleiding"), desc: t("Doctorat en médecine, Université Catholique de Louvain", "Doctoraat in de geneeskunde, Université Catholique de Louvain") },
               { icon: Award, title: t("Spécialisation", "Specialisatie"), desc: t("Diplôme universitaire en médecine esthétique et anti-âge", "Universitair diploma in esthetische en anti-aging geneeskunde") },
