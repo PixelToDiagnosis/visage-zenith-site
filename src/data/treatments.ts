@@ -90,7 +90,7 @@ export const treatmentsData: Record<string, TreatmentData> = {
     safetyFr: "L'acide hyaluronique utilisé pour les lèvres est spécialement formulé pour cette zone délicate. Les produits sont certifiés et biocompatibles.",
     safetyNl: "Het hyaluronzuur dat voor de lippen wordt gebruikt, is speciaal ontwikkeld voor deze delicate zone. De producten zijn gecertificeerd en biocompatibel.",
     faqFr: [
-      { q: "Le résultat sera-t-il naturel ?", a: "La priorité est le naturel. La quantité injectée est adaptée à votre morphologie pour un résultat harmonieux." },
+      { q: "Le résultat sera-t-il naturel ?", a: "Ma priorité est un air naturel. La quantité injectée est adaptée à votre morphologie pour un résultat harmonieux." },
     ],
     faqNl: [
       { q: "Zal het resultaat natuurlijk zijn?", a: "De prioriteit is natuurlijkheid. De geïnjecteerde hoeveelheid wordt aangepast aan uw morfologie voor een harmonieus resultaat." },
