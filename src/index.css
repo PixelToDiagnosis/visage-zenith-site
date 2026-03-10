@@ -75,10 +75,11 @@
     font-family: var(--font-serif);
   }
 
-  /* Ensure touch targets are accessible */
-  a, button {
-    min-height: 44px;
-    min-width: 44px;
+  /* Ensure touch targets are accessible on mobile */
+  @media (hover: none) and (pointer: coarse) {
+    button, [role="button"] {
+      min-height: 44px;
+    }
   }
 
   /* Better tap highlight on mobile */
