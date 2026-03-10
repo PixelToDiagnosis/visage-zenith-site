@@ -11,6 +11,7 @@ const treatments = [
       { slug: "injection-levres", fr: "Lèvres", nl: "Lipfillers" },
       { slug: "jawline", fr: "Jawline", nl: "Jawline" },
       { slug: "cernes", fr: "Cernes", nl: "Wallen" },
+      { slug: "sillons-nasogeniens", fr: "Sillons nasogéniens", nl: "Nasolabiale plooien" },
     ],
   },
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters" },
