@@ -26,7 +26,7 @@ const Index = () => {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center">
+      <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImage} alt={t("Clinique esthétique élégante", "Elegante esthetische kliniek")} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-foreground/40" />
@@ -34,7 +34,7 @@ const Index = () => {
         <div className="relative container-wide px-6 py-20">
           <div className="max-w-2xl">
             <div className="gold-line mb-8" />
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-off-white mb-6">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-off-white mb-6">
               {t(
                 "Révéler votre beauté naturelle grâce à une médecine esthétique subtile et personnalisée.",
                 "Uw natuurlijke schoonheid onthullen dankzij subtiele en gepersonaliseerde esthetische geneeskunde."

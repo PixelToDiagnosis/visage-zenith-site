@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-foreground text-primary-foreground">
       <div className="container-wide section-padding">
-        <div className="grid md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           <div>
             <h3 className="font-serif text-2xl font-light mb-4">Dr Marie-Eve Bousmar</h3>
             <p className="text-sm font-light opacity-70 leading-relaxed">
