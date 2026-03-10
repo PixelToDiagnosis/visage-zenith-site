@@ -44,18 +44,6 @@ const Services = () => {
                   {lang === "fr" ? s.fr : s.nl}
                 </h2>
                 <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
-                {s.sub && (
-                  <div className="mt-5 pt-5 border-t border-border space-y-3">
-                    {s.sub.map((sub) => (
-                      <span
-                        key={sub.slug}
-                        className="block text-sm font-sans text-muted-foreground"
-                      >
-                        • {lang === "fr" ? sub.fr : sub.nl}
-                      </span>
-                    ))}
-                  </div>
-                )}
               </Link>
               {s.sub && (
                 <div className="mt-3 space-y-2">
