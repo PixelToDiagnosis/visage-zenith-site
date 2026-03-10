@@ -58,47 +58,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Doctor Introduction */}
-      <section className="section-padding bg-off-white">
-        <div className="container-wide grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          <div>
-            <img src={doctorImage} alt={t("Portrait du médecin", "Portret van de arts")} className="w-full max-w-md mx-auto rounded-sm shadow-lg" />
-          </div>
-          <div>
-            <div className="gold-line mb-6" />
-            <h2 className="heading-section mb-6">
-              {t("Dr Marie-Eve Bousmar", "Dr Marie-Eve Bousmar")}
-            </h2>
-            <p className="body-text mb-4">
-              {t(
-                "Diplômée en médecine de l'Université Catholique de Louvain, je me suis spécialisée en médecine esthétique à la Swiss Aesthetic Medicine and Business Academy (SAMBA).",
-                "Afgestudeerd in de geneeskunde aan de Université Catholique de Louvain, heb ik mij verder gespecialiseerd in esthetische geneeskunde aan de Swiss Aesthetic Medicine and Business Academy (SAMBA)."
-              )}
-            </p>
-            <p className="body-text mb-4">
-              {t(
-                "Ma pratique repose sur une conviction essentielle : la médecine esthétique doit préserver l'harmonie et l'authenticité du visage, en apportant des résultats subtils et naturels.",
-                "Mijn praktijk is gebaseerd op een essentiële overtuiging: esthetische geneeskunde moet de harmonie en authenticiteit van het gezicht respecteren, met subtiele en natuurlijke resultaten."
-              )}
-            </p>
-            <p className="body-text mb-4">
-              {t(
-                "J'aborde le vieillissement dans une vision globale et holistique, en tenant compte de facteurs essentiels tels que la nutrition, le sommeil, l'activité physique et l'équilibre de vie, afin d'accompagner chaque patient de manière personnalisée.",
-                "Ik benader veroudering vanuit een globale en holistische visie, waarbij rekening wordt gehouden met essentiële factoren zoals voeding, slaap, lichaamsbeweging en een evenwichtige levensstijl, om elke patiënt op een persoonlijke manier te begeleiden."
-              )}
-            </p>
-            <p className="body-text mb-8">
-              {t(
-                "Je poursuis continuellement des formations aux techniques les plus avancées afin d'offrir des soins sûrs, modernes et adaptés à chaque visage.",
-                "Ik blijf mij voortdurend bijscholen in de meest geavanceerde technieken om veilige, moderne en op elk gezicht afgestemde behandelingen aan te bieden."
-              )}
-            </p>
-            <CTAButton to="/about" variant="outline">
-              {t("En savoir plus", "Meer weten")}
-            </CTAButton>
-          </div>
-        </div>
-      </section>
 
       {/* Popular Treatments */}
       <section className="section-padding bg-cream">
