@@ -18,9 +18,9 @@ const Index = () => {
   ];
 
   const testimonials = [
-    { name: "Sophie L.", text: t("Un résultat très naturel, exactement ce que je voulais. Le Dr est à l'écoute et professionnelle.", "Een heel natuurlijk resultaat, precies wat ik wilde. De dokter luistert en is professioneel."), rating: 5 },
-    { name: "Marie V.", text: t("J'avais peur des injections mais j'ai été rassurée dès la première consultation. Résultat magnifique.", "Ik was bang voor injecties maar werd gerustgesteld vanaf het eerste consult. Prachtig resultaat."), rating: 5 },
-    { name: "Isabelle D.", text: t("Clinique élégante, personnel accueillant. Mon traitement botox est parfait et naturel.", "Elegante kliniek, vriendelijk personeel. Mijn botoxbehandeling is perfect en natuurlijk."), rating: 5 },
+    { name: "Sophie L.", text: t("J'ai été voir le Dr Marie-Eve Bousmar pour ma toute première injection de Botox dans le front. J'étais fort stressée mais le Dr Bousmar est très compréhensive, rassurante et douce dans ses manoeuvres. Tout s'est très bien déroulée et je la recommande vivement, sans hésitation, pour son professionnalisme et sa bienveillance !", "Ik ging naar Dr. Marie-Eve Bousmar voor mijn allereerste Botox-injectie in het voorhoofd. Ik was erg gestrest, maar Dr. Bousmar is heel begripvol, geruststellend en zacht in haar handelingen. Alles is heel goed verlopen en ik beveel haar van harte aan, zonder aarzeling, voor haar professionalisme en welwillendheid!"), rating: 5 },
+    { name: "Marie V.", text: t("Le Dr Bousmar est très douce et consciencieuse, je me suis tout de suite sentie à l'aise. Nous avons opté pour un traitement Radiesse combiné avec Skin Booster et je ne suis pas déçue. Des mains expertes !", "Dr. Bousmar is heel zacht en consciëntieus, ik voelde me meteen op mijn gemak. We kozen voor een Radiesse-behandeling gecombineerd met Skin Booster en ik ben niet teleurgesteld. Deskundige handen!"), rating: 5 },
+    { name: "Isabelle D.", text: t("La praticienne est très à l'écoute et prend vraiment son temps à chaque consultation. Elle est méticuleuse et très gentille. Tout est fait de façon à ce que vous soyez très renseignée et très à l'aise avec votre choix. Le résultat est sublime. Je recommande chaudement.", "De arts luistert heel goed en neemt echt de tijd bij elk consult. Ze is nauwkeurig en heel vriendelijk. Alles wordt gedaan zodat u goed geïnformeerd bent en u heel comfortabel voelt bij uw keuze. Het resultaat is subliem. Ik beveel haar warm aan."), rating: 5 },
   ];
 
   return (
