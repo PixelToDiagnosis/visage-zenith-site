@@ -137,7 +137,7 @@ const Index = () => {
           />
           <div className="grid sm:grid-cols-3 gap-8">
             {[
-              { icon: Heart, title: t("Résultats naturels", "Natuurlijke resultaten"), desc: t("Nous valorisons la subtilité et l'harmonie dans chaque traitement.", "Wij waarderen subtiliteit en harmonie bij elke behandeling.") },
+              { icon: Heart, title: t("Résultats naturels", "Natuurlijke resultaten"), desc: t("Je valorise la subtilité et l'harmonie dans chaque traitement.", "Ik hecht waarde aan subtiliteit en harmonie bij elke behandeling.") },
               { icon: Shield, title: t("Sécurité", "Veiligheid"), desc: t("Produits certifiés et techniques médicales éprouvées.", "Gecertificeerde producten en bewezen medische technieken.") },
               { icon: Users, title: t("Approche personnalisée", "Persoonlijke aanpak"), desc: t("Chaque patient reçoit un plan de traitement sur mesure.", "Elke patiënt krijgt een behandelplan op maat.") },
             ].map((item, i) => (
