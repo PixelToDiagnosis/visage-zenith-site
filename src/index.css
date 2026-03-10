@@ -131,7 +131,7 @@
 
   .heading-section {
     font-family: var(--font-serif);
-    @apply text-3xl md:text-4xl font-light leading-tight;
+    @apply text-2xl sm:text-3xl md:text-4xl font-light leading-tight;
     color: hsl(var(--foreground));
   }
 
