@@ -34,17 +34,34 @@ const Services = () => {
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((s) => (
-            <Link
-              key={s.slug}
-              to={`/${s.slug}`}
-              className="group bg-cream p-8 rounded-sm border border-border hover:shadow-lg transition-all duration-300"
-            >
-              <Sparkles className="w-6 h-6 text-gold mb-4" />
-              <h2 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
-                {lang === "fr" ? s.fr : s.nl}
-              </h2>
-              <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
-            </Link>
+            <div key={s.slug} className="space-y-4">
+              <Link
+                to={`/${s.slug}`}
+                className="group block bg-cream p-8 rounded-sm border border-border hover:shadow-lg transition-all duration-300"
+              >
+                <Sparkles className="w-6 h-6 text-gold mb-4" />
+                <h2 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
+                  {lang === "fr" ? s.fr : s.nl}
+                </h2>
+                <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
+              </Link>
+              {s.sub && (
+                <div className="ml-4 space-y-3">
+                  {s.sub.map((sub) => (
+                    <Link
+                      key={sub.slug}
+                      to={`/${sub.slug}`}
+                      className="group block bg-off-white p-5 rounded-sm border border-border hover:shadow-md transition-all duration-300"
+                    >
+                      <h3 className="font-serif text-lg mb-1 group-hover:text-accent transition-colors">
+                        {lang === "fr" ? sub.fr : sub.nl}
+                      </h3>
+                      <p className="body-small text-muted-foreground">{lang === "fr" ? sub.descFr : sub.descNl}</p>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
 
