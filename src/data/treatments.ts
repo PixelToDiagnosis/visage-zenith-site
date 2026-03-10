@@ -59,7 +59,7 @@ export const treatmentsData: Record<string, TreatmentData> = {
     safetyFr: "L'acide hyaluronique est biocompatible et résorbable. Les risques sont minimes. Nous utilisons des produits de la plus haute qualité, certifiés CE.",
     safetyNl: "Hyaluronzuur is biocompatibel en afbreekbaar. De risico's zijn minimaal. Wij gebruiken producten van de hoogste kwaliteit, CE-gecertificeerd.",
     faqFr: [
-      { q: "Combien de temps durent les résultats ?", a: "Entre 8 et 18 mois selon la zone traitée et le produit utilisé." },
+      { q: "Combien de temps durent les résultats ?", a: "Entre 12 et 18 mois selon la zone traitée et le produit utilisé." },
       { q: "Y a-t-il une période de récupération ?", a: "Très peu. Un léger gonflement ou rougeur peut apparaître pendant 24-48h." },
     ],
     faqNl: [
