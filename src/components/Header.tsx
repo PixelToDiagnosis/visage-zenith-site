@@ -60,13 +60,23 @@ const Header = () => {
                   <div className="absolute top-full left-0 pt-2 w-56">
                     <div className="bg-off-white border border-border rounded-sm shadow-lg py-2">
                       {treatments.map((tr) => (
-                        <Link
-                          key={tr.slug}
-                          to={`/${tr.slug}`}
-                          className="block px-4 py-2 body-small hover:bg-beige transition-colors"
-                        >
-                          {lang === "fr" ? tr.fr : tr.nl}
-                        </Link>
+                        <div key={tr.slug}>
+                          <Link
+                            to={`/${tr.slug}`}
+                            className="block px-4 py-2 body-small font-medium hover:bg-beige transition-colors"
+                          >
+                            {lang === "fr" ? tr.fr : tr.nl}
+                          </Link>
+                          {tr.sub?.map((sub) => (
+                            <Link
+                              key={sub.slug}
+                              to={`/${sub.slug}`}
+                              className="block px-4 pl-8 py-1.5 body-small text-muted-foreground hover:bg-beige transition-colors"
+                            >
+                              {lang === "fr" ? sub.fr : sub.nl}
+                            </Link>
+                          ))}
+                        </div>
                       ))}
                     </div>
                   </div>
