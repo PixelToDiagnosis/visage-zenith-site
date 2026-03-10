@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
-import { Sparkles } from "lucide-react";
+import { Sparkles, ChevronDown } from "lucide-react";
 import treatmentImage from "@/assets/treatment-injection.jpg";
 
 const services = [
@@ -22,6 +23,11 @@ const services = [
 
 const Services = () => {
   const { lang, t } = useLanguage();
+  const [expandedSlug, setExpandedSlug] = useState<string | null>(null);
+
+  const toggleSub = (slug: string) => {
+    setExpandedSlug((prev) => (prev === slug ? null : slug));
+  };
 
   return (
     <section className="section-padding bg-off-white">
@@ -34,29 +40,50 @@ const Services = () => {
           )}
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((s) => (
-            <Link
-              key={s.slug}
-              to={`/${s.slug}`}
-              className="group block bg-cream p-8 rounded-sm border border-border hover:shadow-lg transition-all duration-300 h-full"
-            >
-              <Sparkles className="w-6 h-6 text-gold mb-4" />
-              <h2 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
-                {lang === "fr" ? s.fr : s.nl}
-              </h2>
-              <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
-            </Link>
-          ))}
+          {services.map((s) =>
+            s.sub ? (
+              <button
+                key={s.slug}
+                onClick={() => toggleSub(s.slug)}
+                className="group block bg-cream p-8 rounded-sm border border-border hover:shadow-lg transition-all duration-300 h-full text-left"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <Sparkles className="w-6 h-6 text-gold" />
+                  <ChevronDown
+                    className={`w-4 h-4 text-muted-foreground transition-transform duration-300 ${
+                      expandedSlug === s.slug ? "rotate-180" : ""
+                    }`}
+                  />
+                </div>
+                <h2 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
+                  {lang === "fr" ? s.fr : s.nl}
+                </h2>
+                <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
+              </button>
+            ) : (
+              <Link
+                key={s.slug}
+                to={`/${s.slug}`}
+                className="group block bg-cream p-8 rounded-sm border border-border hover:shadow-lg transition-all duration-300 h-full"
+              >
+                <Sparkles className="w-6 h-6 text-gold mb-4" />
+                <h2 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
+                  {lang === "fr" ? s.fr : s.nl}
+                </h2>
+                <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
+              </Link>
+            )
+          )}
         </div>
 
-        {/* Sub-treatments for Acide hyaluronique */}
+        {/* Sub-treatments revealed on click */}
         {services
-          .filter((s) => s.sub)
+          .filter((s) => s.sub && expandedSlug === s.slug)
           .map((s) => (
-            <div key={`${s.slug}-sub`} className="mt-6">
-              <p className="text-sm text-muted-foreground mb-3 font-medium uppercase tracking-wider">
-                {lang === "fr" ? `Soins ${s.fr}` : `${s.nl} behandelingen`}
-              </p>
+            <div
+              key={`${s.slug}-sub`}
+              className="mt-6 animate-in fade-in slide-in-from-top-2 duration-300"
+            >
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {s.sub!.map((sub) => (
                   <Link
