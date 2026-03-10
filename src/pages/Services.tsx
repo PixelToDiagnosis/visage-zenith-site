@@ -17,6 +17,7 @@ const services = [
     ],
   },
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters", descFr: "Hydratation intense et éclat de la peau.", descNl: "Intense hydratatie en huidglans." },
+  { slug: "inducteurs-de-collagene", fr: "Inducteurs de collagène", nl: "Collageenstimulators", descFr: "Stimulation naturelle du collagène pour une peau raffermie et régénérée.", descNl: "Natuurlijke stimulatie van collageen voor een stevigere en vernieuwde huid." },
 ];
 
 const Services = () => {
@@ -32,7 +33,7 @@ const Services = () => {
             "Een compleet gamma esthetische behandelingen om uw natuurlijke schoonheid te verbeteren."
           )}
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s) => (
             <Link
               key={s.slug}
