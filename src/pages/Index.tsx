@@ -132,7 +132,7 @@ const Index = () => {
       <section className="section-padding bg-off-white">
         <div className="container-narrow text-center">
           <SectionHeading
-            title={t("Notre philosophie", "Onze filosofie")}
+            title={t("Philosophie", "Filosofie")}
             subtitle={t("Le naturel avant tout", "Natuurlijkheid boven alles")}
           />
           <div className="grid sm:grid-cols-3 gap-8">
