@@ -134,14 +134,25 @@ const Header = () => {
               {item.dropdown && (
                 <div className="ml-4 mt-1 space-y-1">
                   {treatments.map((tr) => (
-                    <Link
-                      key={tr.slug}
-                      to={`/${tr.slug}`}
-                      className="block body-small text-muted-foreground py-1"
-                      onClick={() => setMobileOpen(false)}
-                    >
-                      {lang === "fr" ? tr.fr : tr.nl}
-                    </Link>
+                    <div key={tr.slug}>
+                      <Link
+                        to={`/${tr.slug}`}
+                        className="block body-small text-muted-foreground py-1 font-medium"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        {lang === "fr" ? tr.fr : tr.nl}
+                      </Link>
+                      {tr.sub?.map((sub) => (
+                        <Link
+                          key={sub.slug}
+                          to={`/${sub.slug}`}
+                          className="block body-small text-muted-foreground py-1 ml-4"
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          {lang === "fr" ? sub.fr : sub.nl}
+                        </Link>
+                      ))}
+                    </div>
                   ))}
                 </div>
               )}
