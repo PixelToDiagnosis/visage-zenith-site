@@ -2,7 +2,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
 import doctorImage from "@/assets/doctor-portrait.jpg";
-import { Award, GraduationCap, Heart, Stethoscope } from "lucide-react";
+import { Award, GraduationCap, Heart } from "lucide-react";
 
 const AboutMe = () => {
   const { t } = useLanguage();
