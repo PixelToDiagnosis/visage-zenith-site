@@ -2,7 +2,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
 import doctorImage from "@/assets/doctor-portrait.jpg";
-import { Award, GraduationCap, Heart, Stethoscope } from "lucide-react";
+import { Award, GraduationCap, Heart } from "lucide-react";
 
 const AboutMe = () => {
   const { t } = useLanguage();
@@ -50,11 +50,11 @@ const AboutMe = () => {
       <section className="section-padding bg-cream">
         <div className="container-wide">
           <SectionHeading title={t("Parcours & Expertise", "Opleiding & Expertise")} />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-3 gap-8">
             {[
               { icon: GraduationCap, title: t("Formation médicale", "Medische opleiding"), desc: t("Doctorat en médecine, Université Catholique de Louvain", "Doctoraat in de geneeskunde, Université Catholique de Louvain") },
               { icon: Award, title: t("Spécialisation", "Specialisatie"), desc: t("Diplôme universitaire en médecine esthétique et anti-âge", "Universitair diploma in esthetische en anti-aging geneeskunde") },
-              { icon: Stethoscope, title: t("Expérience", "Ervaring"), desc: t("Plus de 15 ans d'expérience en injections et traitements esthétiques", "Meer dan 15 jaar ervaring in injecties en esthetische behandelingen") },
+              
               { icon: Heart, title: t("Philosophie", "Filosofie"), desc: t("Des résultats naturels qui respectent l'harmonie de chaque visage", "Natuurlijke resultaten die de harmonie van elk gezicht respecteren") },
             ].map((item, i) => (
               <div key={i} className="text-center">
