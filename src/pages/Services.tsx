@@ -32,9 +32,9 @@ const Services = () => {
             "Een compleet gamma esthetische behandelingen om uw natuurlijke schoonheid te verbeteren."
           )}
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
           {services.map((s) => (
-            <div key={s.slug} className="space-y-4">
+            <div key={s.slug}>
               <Link
                 to={`/${s.slug}`}
                 className="group block bg-cream p-8 rounded-sm border border-border hover:shadow-lg transition-all duration-300"
@@ -46,17 +46,20 @@ const Services = () => {
                 <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
               </Link>
               {s.sub && (
-                <div className="ml-4 space-y-3">
+                <div className="mt-3 space-y-2">
                   {s.sub.map((sub) => (
                     <Link
                       key={sub.slug}
                       to={`/${sub.slug}`}
-                      className="group block bg-off-white p-5 rounded-sm border border-border hover:shadow-md transition-all duration-300"
+                      className="group flex items-center gap-3 bg-off-white px-6 py-4 rounded-sm border border-border hover:shadow-md hover:border-accent/30 transition-all duration-300"
                     >
-                      <h3 className="font-serif text-lg mb-1 group-hover:text-accent transition-colors">
-                        {lang === "fr" ? sub.fr : sub.nl}
-                      </h3>
-                      <p className="body-small text-muted-foreground">{lang === "fr" ? sub.descFr : sub.descNl}</p>
+                      <span className="w-1.5 h-1.5 rounded-full bg-gold flex-shrink-0" />
+                      <div>
+                        <h3 className="font-serif text-base group-hover:text-accent transition-colors">
+                          {lang === "fr" ? sub.fr : sub.nl}
+                        </h3>
+                        <p className="body-small text-muted-foreground text-xs mt-0.5">{lang === "fr" ? sub.descFr : sub.descNl}</p>
+                      </div>
                     </Link>
                   ))}
                 </div>
