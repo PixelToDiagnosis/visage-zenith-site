@@ -125,7 +125,7 @@
 
   .heading-display {
     font-family: var(--font-serif);
-    @apply text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight;
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight;
     color: hsl(var(--foreground));
   }
 
