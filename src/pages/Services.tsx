@@ -17,6 +17,7 @@ const services = [
     ],
   },
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters", descFr: "Hydratation intense et éclat de la peau.", descNl: "Intense hydratatie en huidglans." },
+  { slug: "inducteurs-de-collagene", fr: "Inducteurs de collagène", nl: "Collageenstimulators", descFr: "Stimulation naturelle du collagène pour une peau raffermie et régénérée.", descNl: "Natuurlijke stimulatie van collageen voor een stevigere en vernieuwde huid." },
 ];
 
 const Services = () => {
