@@ -63,7 +63,7 @@ const Index = () => {
         <div className="container-wide">
           <SectionHeading
             title={t("Traitements", "Behandelingen")}
-            subtitle={t("Des solutions éprouvées pour sublimer votre beauté naturelle", "Bewezen oplossingen om uw natuurlijke schoonheid te verbeteren")}
+            subtitle={t("Des solutions pour sublimer votre beauté naturelle", "Oplossingen om uw natuurlijke schoonheid te verbeteren")}
           />
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {treatments.map((tr) => (
