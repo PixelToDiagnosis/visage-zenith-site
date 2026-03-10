@@ -93,7 +93,7 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Le résultat sera-t-il naturel ?", a: "Ma priorité est un air naturel. La quantité injectée est adaptée à votre morphologie pour un résultat harmonieux." },
     ],
     faqNl: [
-      { q: "Zal het resultaat natuurlijk zijn?", a: "De prioriteit is natuurlijkheid. De geïnjecteerde hoeveelheid wordt aangepast aan uw morfologie voor een harmonieus resultaat." },
+      { q: "Zal het resultaat natuurlijk zijn?", a: "Mijn prioriteit is een natuurlijke uitstraling. De geïnjecteerde hoeveelheid wordt aangepast aan uw morfologie voor een harmonieus resultaat." },
     ],
   },
   jawline: {
