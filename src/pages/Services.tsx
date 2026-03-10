@@ -15,6 +15,7 @@ const services = [
       { slug: "injection-levres", fr: "Lèvres", nl: "Lipfillers", descFr: "Volume et définition naturelle des lèvres.", descNl: "Natuurlijk volume en definitie van de lippen." },
       { slug: "jawline", fr: "Jawline", nl: "Jawline", descFr: "Redéfinition de l'ovale du visage.", descNl: "Herdefinitie van de gezichtscontouren." },
       { slug: "cernes", fr: "Cernes", nl: "Wallen", descFr: "Correction des cernes et du regard fatigué.", descNl: "Correctie van wallen en een vermoeid uiterlijk." },
+      { slug: "sillons-nasogeniens", fr: "Sillons nasogéniens", nl: "Nasolabiale plooien", descFr: "Atténuation des plis entre le nez et la bouche pour un visage reposé.", descNl: "Vermindering van de plooien tussen neus en mond voor een uitgerust gezicht." },
     ],
   },
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters", descFr: "Hydratation intense et éclat de la peau.", descNl: "Intense hydratatie en huidglans." },
