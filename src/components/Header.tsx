@@ -120,13 +120,17 @@ const Header = () => {
       </div>
 
       {/* Mobile Nav */}
-      {mobileOpen && (
-        <div className="lg:hidden bg-off-white border-t border-border px-6 py-6 space-y-4">
+      <div
+        className={`lg:hidden bg-off-white border-t border-border overflow-y-auto transition-all duration-300 ease-in-out ${
+          mobileOpen ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0 border-t-0"
+        }`}
+      >
+        <div className="px-6 py-6 space-y-4">
           {navItems.map((item) => (
             <div key={item.path}>
               <Link
                 to={item.path}
-                className="block body-small text-foreground py-1"
+                className="block body-small text-foreground py-2"
                 onClick={() => setMobileOpen(false)}
               >
                 {item.label}
@@ -137,7 +141,7 @@ const Header = () => {
                     <div key={tr.slug}>
                       <Link
                         to={`/${tr.slug}`}
-                        className="block body-small text-muted-foreground py-1 font-medium"
+                        className="block body-small text-muted-foreground py-2 font-medium"
                         onClick={() => setMobileOpen(false)}
                       >
                         {lang === "fr" ? tr.fr : tr.nl}
@@ -146,7 +150,7 @@ const Header = () => {
                         <Link
                           key={sub.slug}
                           to={`/${sub.slug}`}
-                          className="block body-small text-muted-foreground py-1 ml-4"
+                          className="block body-small text-muted-foreground py-2 ml-4"
                           onClick={() => setMobileOpen(false)}
                         >
                           {lang === "fr" ? sub.fr : sub.nl}
@@ -161,7 +165,7 @@ const Header = () => {
           <div className="pt-4 flex items-center gap-4 border-t border-border">
             <button
               onClick={() => setLang(lang === "fr" ? "nl" : "fr")}
-              className="body-small font-normal text-accent uppercase tracking-widest"
+              className="body-small font-normal text-accent uppercase tracking-widest py-2"
             >
               {lang === "fr" ? "NL" : "FR"}
             </button>
@@ -169,14 +173,14 @@ const Header = () => {
               href="https://www.doctoranytime.be/nl/d/esthetisch-arts/marie-eve-bousmar"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-2 bg-accent text-accent-foreground body-small font-normal rounded-sm"
+              className="px-5 py-3 bg-accent text-accent-foreground body-small font-normal rounded-sm"
               onClick={() => setMobileOpen(false)}
             >
               {t("Rendez-vous", "Afspraak")}
             </a>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 };

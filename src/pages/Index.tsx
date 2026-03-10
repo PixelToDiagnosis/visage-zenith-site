@@ -34,7 +34,7 @@ const Index = () => {
         <div className="relative container-wide px-6 py-20">
           <div className="max-w-2xl">
             <div className="gold-line mb-8" />
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-off-white mb-6">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-off-white mb-6">
               {t(
                 "Révéler votre beauté naturelle grâce à une médecine esthétique subtile et personnalisée.",
                 "Uw natuurlijke schoonheid onthullen dankzij subtiele en gepersonaliseerde esthetische geneeskunde."
