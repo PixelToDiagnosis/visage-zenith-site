@@ -5,10 +5,14 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const treatments = [
   { slug: "botox", fr: "Botox", nl: "Botox" },
-  { slug: "acide-hyaluronique", fr: "Acide hyaluronique", nl: "Hyaluronzuur" },
-  { slug: "injection-levres", fr: "Lèvres", nl: "Lipfillers" },
-  { slug: "jawline", fr: "Jawline", nl: "Jawline" },
-  { slug: "cernes", fr: "Cernes", nl: "Wallen" },
+  {
+    slug: "acide-hyaluronique", fr: "Acide hyaluronique", nl: "Hyaluronzuur",
+    sub: [
+      { slug: "injection-levres", fr: "Lèvres", nl: "Lipfillers" },
+      { slug: "jawline", fr: "Jawline", nl: "Jawline" },
+      { slug: "cernes", fr: "Cernes", nl: "Wallen" },
+    ],
+  },
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters" },
 ];
 
