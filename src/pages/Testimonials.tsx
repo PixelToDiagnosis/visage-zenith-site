@@ -19,7 +19,7 @@ const Testimonials = () => {
       <div className="container-wide">
         <SectionHeading
           title={t("Témoignages patients", "Patiënt ervaringen")}
-          subtitle={t("Découvrez les expériences de nos patients", "Ontdek de ervaringen van onze patiënten")}
+          subtitle={t("Découvrez les expériences patients", "Ontdek de ervaringen van patiënten")}
         />
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.map((r, i) => (
