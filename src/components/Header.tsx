@@ -5,10 +5,14 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const treatments = [
   { slug: "botox", fr: "Botox", nl: "Botox" },
-  { slug: "acide-hyaluronique", fr: "Acide hyaluronique", nl: "Hyaluronzuur" },
-  { slug: "injection-levres", fr: "Lèvres", nl: "Lipfillers" },
-  { slug: "jawline", fr: "Jawline", nl: "Jawline" },
-  { slug: "cernes", fr: "Cernes", nl: "Wallen" },
+  {
+    slug: "acide-hyaluronique", fr: "Acide hyaluronique", nl: "Hyaluronzuur",
+    sub: [
+      { slug: "injection-levres", fr: "Lèvres", nl: "Lipfillers" },
+      { slug: "jawline", fr: "Jawline", nl: "Jawline" },
+      { slug: "cernes", fr: "Cernes", nl: "Wallen" },
+    ],
+  },
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters" },
 ];
 
@@ -56,13 +60,23 @@ const Header = () => {
                   <div className="absolute top-full left-0 pt-2 w-56">
                     <div className="bg-off-white border border-border rounded-sm shadow-lg py-2">
                       {treatments.map((tr) => (
-                        <Link
-                          key={tr.slug}
-                          to={`/${tr.slug}`}
-                          className="block px-4 py-2 body-small hover:bg-beige transition-colors"
-                        >
-                          {lang === "fr" ? tr.fr : tr.nl}
-                        </Link>
+                        <div key={tr.slug}>
+                          <Link
+                            to={`/${tr.slug}`}
+                            className="block px-4 py-2 body-small font-medium hover:bg-beige transition-colors"
+                          >
+                            {lang === "fr" ? tr.fr : tr.nl}
+                          </Link>
+                          {tr.sub?.map((sub) => (
+                            <Link
+                              key={sub.slug}
+                              to={`/${sub.slug}`}
+                              className="block px-4 pl-8 py-1.5 body-small text-muted-foreground hover:bg-beige transition-colors"
+                            >
+                              {lang === "fr" ? sub.fr : sub.nl}
+                            </Link>
+                          ))}
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -120,14 +134,25 @@ const Header = () => {
               {item.dropdown && (
                 <div className="ml-4 mt-1 space-y-1">
                   {treatments.map((tr) => (
-                    <Link
-                      key={tr.slug}
-                      to={`/${tr.slug}`}
-                      className="block body-small text-muted-foreground py-1"
-                      onClick={() => setMobileOpen(false)}
-                    >
-                      {lang === "fr" ? tr.fr : tr.nl}
-                    </Link>
+                    <div key={tr.slug}>
+                      <Link
+                        to={`/${tr.slug}`}
+                        className="block body-small text-muted-foreground py-1 font-medium"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        {lang === "fr" ? tr.fr : tr.nl}
+                      </Link>
+                      {tr.sub?.map((sub) => (
+                        <Link
+                          key={sub.slug}
+                          to={`/${sub.slug}`}
+                          className="block body-small text-muted-foreground py-1 ml-4"
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          {lang === "fr" ? sub.fr : sub.nl}
+                        </Link>
+                      ))}
+                    </div>
                   ))}
                 </div>
               )}
