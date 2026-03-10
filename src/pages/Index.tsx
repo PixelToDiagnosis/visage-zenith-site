@@ -156,7 +156,7 @@ const Index = () => {
         <div className="container-wide">
           <SectionHeading
             title={t("Témoignages patients", "Patiënt ervaringen")}
-            subtitle={t("La confiance de nos patients est notre plus belle récompense", "Het vertrouwen van onze patiënten is onze mooiste beloning")}
+            subtitle={t("La confiance de mes patients est ma plus belle récompense", "Het vertrouwen van mijn patiënten is mijn mooiste beloning")}
           />
           <div className="grid md:grid-cols-3 gap-6">
             {testimonials.map((item, i) => (
