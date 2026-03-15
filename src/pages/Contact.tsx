@@ -109,9 +109,18 @@ const Contact = () => {
                 WhatsApp
               </a>
 
-              {/* Map placeholder */}
-              <div className="bg-beige rounded-sm aspect-video flex items-center justify-center">
-                <p className="body-small">{t("Carte Google Maps", "Google Maps kaart")}</p>
+              {/* Google Map */}
+              <div className="rounded-sm overflow-hidden aspect-video">
+                <iframe
+                  title={t("Carte du cabinet", "Kaart van de praktijk")}
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.5!2d4.3517!3d50.8783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c4e5b7f0d%3A0x0!2sForumlaan%202%2C%201020%20Brussel!5e0!3m2!1sfr!2sbe!4v1710000000000"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
           </div>
