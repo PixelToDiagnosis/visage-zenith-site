@@ -63,7 +63,7 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Y a-t-il une période de récupération ?", a: "Très peu. Un léger gonflement ou rougeur peut apparaître pendant 24-48h." },
     ],
     faqNl: [
-      { q: "Hoe lang duren de resultaten?", a: "Tussen 8 en 18 maanden afhankelijk van de behandelde zone en het gebruikte product." },
+      { q: "Hoe lang duren de resultaten?", a: "Tussen 12 en 18 maanden afhankelijk van de behandelde zone en het gebruikte product." },
       { q: "Is er een herstelperiode?", a: "Heel weinig. Lichte zwelling of roodheid kan 24-48 uur verschijnen." },
     ],
     priceFr: "Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. La première consultation est entièrement informative et gratuite. Prix indicatif : 350 €/ampoule.",
