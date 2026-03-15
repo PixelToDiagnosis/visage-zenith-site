@@ -11,7 +11,7 @@ const Index = () => {
   const treatments = [
     { slug: "botox", name: "Botox", desc: t("Rides d'expression, front, rides du lion", "Expressierimpels, voorhoofd, fronsrimpels") },
     { slug: "acide-hyaluronique", name: t("Acide hyaluronique", "Hyaluronzuur"), desc: t("Volume, hydratation, rajeunissement", "Volume, hydratatie, verjonging") },
-    { slug: "injection-levres", name: t("Lèvres", "Lippen"), desc: t("Volume naturel et définition", "Natuurlijk volume en definitie") },
+    
     { slug: "skin-boosters", name: "Skin Boosters", desc: t("Hydratation profonde, éclat", "Diepe hydratatie, glans") },
     { slug: "services", name: t("Inducteurs de collagène", "Collageenstimulatie"), desc: t("Stimulation naturelle du collagène, fermeté", "Natuurlijke collageenstimulatie, stevigheid") },
   ];
