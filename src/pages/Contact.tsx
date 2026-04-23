@@ -85,19 +85,28 @@ const Contact = () => {
 
             {/* Info */}
             <div className="space-y-8">
-              {[
-                { icon: Phone, label: t("Téléphone", "Telefoon"), value: "+32 474 63 60 22" },
-                { icon: Mail, label: "Email", value: "dr.mbousmar@gmail.com" },
-                { icon: MapPin, label: t("Adresse", "Adres"), value: t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken") },
-              ].map((item, i) => (
-                <div key={i} className="flex items-start gap-4">
-                  <item.icon className="w-5 h-5 text-gold mt-1" />
-                  <div>
-                    <p className="font-serif text-lg">{item.label}</p>
-                    <p className="body-small">{item.value}</p>
-                  </div>
+              <div className="flex items-start gap-4">
+                <Phone className="w-5 h-5 text-gold mt-1" />
+                <div>
+                  <p className="font-serif text-lg">{t("Téléphone", "Telefoon")}</p>
+                  <p className="body-small">+32 474 63 60 22</p>
                 </div>
-              ))}
+              </div>
+              <div className="flex items-start gap-4">
+                <Mail className="w-5 h-5 text-gold mt-1" />
+                <div>
+                  <p className="font-serif text-lg">Email</p>
+                  <p className="body-small">dr.mbousmar@gmail.com</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <MapPin className="w-5 h-5 text-gold mt-1" />
+                <div>
+                  <p className="font-serif text-lg">{t("Adresses", "Adressen")}</p>
+                  <p className="body-small">{t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken")}</p>
+                  <p className="body-small mt-1">Gildehof 11, 1730 Asse</p>
+                </div>
+              </div>
 
               <a
                 href="https://wa.me/32474636022"
@@ -109,18 +118,32 @@ const Contact = () => {
                 WhatsApp
               </a>
 
-              {/* Google Map */}
-              <div className="rounded-sm overflow-hidden aspect-video">
-                <iframe
-                  title={t("Carte du cabinet", "Kaart van de praktijk")}
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2517.5!2d4.3517!3d50.8783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c38c4e5b7f0d%3A0x0!2sForumlaan%202%2C%201020%20Brussel!5e0!3m2!1sfr!2sbe!4v1710000000000"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
+              {/* Google Maps */}
+              <div className="space-y-4">
+                <div className="rounded-sm overflow-hidden aspect-video">
+                  <iframe
+                    title={t("Cabinet Laeken", "Praktijk Laken")}
+                    src="https://www.google.com/maps?q=Forumlaan+2,+1020+Laken,+Belgium&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+                <div className="rounded-sm overflow-hidden aspect-video">
+                  <iframe
+                    title={t("Cabinet Asse", "Praktijk Asse")}
+                    src="https://www.google.com/maps?q=Gildehof+11,+1730+Asse,+Belgium&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
               </div>
             </div>
           </div>
