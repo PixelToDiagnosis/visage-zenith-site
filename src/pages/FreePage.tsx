@@ -11,7 +11,12 @@ const FreePage = () => {
   const pdfUrl =
     lang === "fr"
       ? "/guide-premiere-consultation-dr-bousmar.pdf"
-      : "/guide-premiere-consultation-dr-bousmar.pdf";
+      : "/gids-eerste-consultatie-dr-bousmar.pdf";
+
+  const pdfFilename =
+    lang === "fr"
+      ? "guide-premiere-consultation-dr-bousmar.pdf"
+      : "gids-eerste-consultatie-dr-bousmar.pdf";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
