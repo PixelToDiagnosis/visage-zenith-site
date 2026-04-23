@@ -28,14 +28,14 @@ const FreePage = () => {
           <Download className="w-10 h-10 text-gold mx-auto mb-6" />
           <h2 className="font-serif text-2xl mb-4">
             {t(
-              "Les 5 traitements de médecine esthétique pour un résultat naturel",
-              "De 5 behandelingen in esthetische geneeskunde voor een natuurlijk resultaat"
+              "Comment préparer votre première consultation esthétique",
+              "Hoe u uw eerste esthetische consultatie voorbereidt"
             )}
           </h2>
           <p className="body-small mb-8">
             {t(
-              "Un guide complet pour comprendre les traitements les plus populaires et choisir celui qui vous convient.",
-              "Een complete gids om de populairste behandelingen te begrijpen en de juiste voor u te kiezen."
+              "Un guide pratique pour aborder sereinement votre première consultation : questions à poser, attentes réalistes et points clés à préparer.",
+              "Een praktische gids om uw eerste consultatie sereen aan te pakken: te stellen vragen, realistische verwachtingen en belangrijke voorbereidingspunten."
             )}
           </p>
 
