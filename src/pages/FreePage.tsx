@@ -4,13 +4,26 @@ import SectionHeading from "@/components/SectionHeading";
 import { Download } from "lucide-react";
 
 const FreePage = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  const pdfUrl =
+    lang === "fr"
+      ? "/guide-premiere-consultation-dr-bousmar.pdf"
+      : "/guide-premiere-consultation-dr-bousmar.pdf";
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (email) setSubmitted(true);
+    if (email) {
+      setSubmitted(true);
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "guide-premiere-consultation-dr-bousmar.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
   };
 
   return (
@@ -40,10 +53,17 @@ const FreePage = () => {
           </p>
 
           {submitted ? (
-            <div className="bg-off-white p-6 rounded-sm">
+            <div className="bg-off-white p-6 rounded-sm space-y-3">
               <p className="font-serif text-lg text-accent">
-                {t("Merci ! Vérifiez votre boîte mail.", "Bedankt! Controleer uw mailbox.")}
+                {t("Merci ! Votre téléchargement a démarré.", "Bedankt! Uw download is gestart.")}
               </p>
+              <a
+                href={pdfUrl}
+                download
+                className="inline-block text-sm underline text-accent hover:opacity-80"
+              >
+                {t("Cliquez ici si rien ne se passe", "Klik hier als er niets gebeurt")}
+              </a>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
