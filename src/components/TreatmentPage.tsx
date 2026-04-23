@@ -64,6 +64,12 @@ const TreatmentPage = ({ data }: { data: TreatmentData }) => {
               </li>
             ))}
           </ul>
+          <p className="body-small italic mt-6 text-muted-foreground">
+            {t(
+              "Cette liste est donnée à titre indicatif et n'est pas exhaustive. N'hésitez pas à me consulter pour discuter de vos besoins spécifiques.",
+              "Deze lijst is indicatief en niet uitputtend. Aarzel niet om mij te raadplegen om uw specifieke behoeften te bespreken."
+            )}
+          </p>
         </div>
       </section>
 
