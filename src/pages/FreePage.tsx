@@ -11,7 +11,12 @@ const FreePage = () => {
   const pdfUrl =
     lang === "fr"
       ? "/guide-premiere-consultation-dr-bousmar.pdf"
-      : "/guide-premiere-consultation-dr-bousmar.pdf";
+      : "/gids-eerste-consultatie-dr-bousmar.pdf";
+
+  const pdfFilename =
+    lang === "fr"
+      ? "guide-premiere-consultation-dr-bousmar.pdf"
+      : "gids-eerste-consultatie-dr-bousmar.pdf";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,7 +24,7 @@ const FreePage = () => {
       setSubmitted(true);
       const link = document.createElement("a");
       link.href = pdfUrl;
-      link.download = "guide-premiere-consultation-dr-bousmar.pdf";
+      link.download = pdfFilename;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
