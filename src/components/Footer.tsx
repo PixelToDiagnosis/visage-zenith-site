@@ -57,6 +57,10 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 opacity-70" />
+                <span className="text-sm opacity-70">11 Gildehof, 1730 Asse</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <MapPin className="w-4 h-4 opacity-70" />
                 <span className="text-sm opacity-70">{t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken")}</span>
               </div>
             </div>
