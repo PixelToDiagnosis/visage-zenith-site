@@ -103,8 +103,8 @@ const Contact = () => {
                 <MapPin className="w-5 h-5 text-gold mt-1" />
                 <div>
                   <p className="font-serif text-lg">{t("Adresses", "Adressen")}</p>
-                  <p className="body-small">{t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken")}</p>
-                  <p className="body-small mt-1">Gildehof 11, 1730 Asse</p>
+                  <p className="body-small">11 Gildehof, 1730 Asse</p>
+                  <p className="body-small mt-1">{t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken")}</p>
                 </div>
               </div>
 
@@ -122,8 +122,8 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="rounded-sm overflow-hidden aspect-video">
                   <iframe
-                    title={t("Cabinet Laeken", "Praktijk Laken")}
-                    src="https://www.google.com/maps?q=Forumlaan+2,+1020+Laken,+Belgium&output=embed"
+                    title={t("Cabinet Asse", "Praktijk Asse")}
+                    src="https://www.google.com/maps?q=Gildehof+11,+1730+Asse,+Belgium&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -134,8 +134,8 @@ const Contact = () => {
                 </div>
                 <div className="rounded-sm overflow-hidden aspect-video">
                   <iframe
-                    title={t("Cabinet Asse", "Praktijk Asse")}
-                    src="https://www.google.com/maps?q=Gildehof+11,+1730+Asse,+Belgium&output=embed"
+                    title={t("Cabinet Laeken", "Praktijk Laken")}
+                    src="https://www.google.com/maps?q=Forumlaan+2,+1020+Laken,+Belgium&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
