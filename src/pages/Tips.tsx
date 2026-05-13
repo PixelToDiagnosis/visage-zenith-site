@@ -50,14 +50,12 @@ const Tips = () => {
                   <span className="text-xs uppercase tracking-widest text-gold">{content.cat}</span>
                   <h2 className="font-serif text-xl mt-3 mb-3">{content.title}</h2>
                   <p className="body-small mb-4">{content.excerpt}</p>
-                  {i === 0 && lang === "nl" ? (
+                  {i === 0 ? (
                     <a
                       href="/anti-aging-tips.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="inline-block text-sm text-accent hover:opacity-80 underline"
                     >
-                      Open/download de gids (PDF) →
+                      {t("Ouvrir le guide (PDF) →", "Open de gids (PDF) →")}
                     </a>
                   ) : (
                     <span className="text-sm text-accent cursor-pointer">{t("Lire la suite →", "Lees meer →")}</span>
