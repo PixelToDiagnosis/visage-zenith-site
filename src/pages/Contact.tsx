@@ -153,6 +153,16 @@ const Contact = () => {
                   />
                 </div>
               </div>
+
+              <a
+                href="https://instagram.com/dr_marie.eve"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-foreground font-sans text-sm tracking-widest uppercase rounded-sm hover:opacity-90 transition-opacity"
+              >
+                <InstagramIcon className="w-4 h-4" />
+                Instagram
+              </a>
             </div>
           </div>
         </div>
