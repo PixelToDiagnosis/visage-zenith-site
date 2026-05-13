@@ -103,8 +103,8 @@ const Contact = () => {
                 <MapPin className="w-5 h-5 text-gold mt-1" />
                 <div>
                   <p className="font-serif text-lg">{t("Adresses", "Adressen")}</p>
-                  <p className="body-small">{t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken")}</p>
-                  <p className="body-small mt-1">Gildehof 11, 1730 Asse</p>
+                  <p className="body-small">11 Gildehof, 1730 Asse</p>
+                  <p className="body-small mt-1">{t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken")}</p>
                 </div>
               </div>
 
