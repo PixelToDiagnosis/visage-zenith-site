@@ -15,6 +15,8 @@ const treatments = [
     ],
   },
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters" },
+  { slug: "prp-cheveux-visage", fr: "PRP Cheveux & Visage", nl: "PRP Haar & Gezicht" },
+  { slug: "rejuran", fr: "Rejuran", nl: "Rejuran" },
 ];
 
 const Header = () => {
