@@ -122,8 +122,8 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="rounded-sm overflow-hidden aspect-video">
                   <iframe
-                    title={t("Cabinet Laeken", "Praktijk Laken")}
-                    src="https://www.google.com/maps?q=Forumlaan+2,+1020+Laken,+Belgium&output=embed"
+                    title={t("Cabinet Asse", "Praktijk Asse")}
+                    src="https://www.google.com/maps?q=Gildehof+11,+1730+Asse,+Belgium&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -134,8 +134,8 @@ const Contact = () => {
                 </div>
                 <div className="rounded-sm overflow-hidden aspect-video">
                   <iframe
-                    title={t("Cabinet Asse", "Praktijk Asse")}
-                    src="https://www.google.com/maps?q=Gildehof+11,+1730+Asse,+Belgium&output=embed"
+                    title={t("Cabinet Laeken", "Praktijk Laken")}
+                    src="https://www.google.com/maps?q=Forumlaan+2,+1020+Laken,+Belgium&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
