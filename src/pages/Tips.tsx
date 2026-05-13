@@ -50,7 +50,17 @@ const Tips = () => {
                   <span className="text-xs uppercase tracking-widest text-gold">{content.cat}</span>
                   <h2 className="font-serif text-xl mt-3 mb-3">{content.title}</h2>
                   <p className="body-small mb-4">{content.excerpt}</p>
-                  <span className="text-sm text-accent cursor-pointer">{t("Lire la suite →", "Lees meer →")}</span>
+                  {i === 0 && lang === "nl" ? (
+                    <a
+                      href="/anti-aging-tips.pdf"
+                      download
+                      className="inline-block text-sm text-accent hover:opacity-80 underline"
+                    >
+                      Download de gids (PDF) →
+                    </a>
+                  ) : (
+                    <span className="text-sm text-accent cursor-pointer">{t("Lire la suite →", "Lees meer →")}</span>
+                  )}
                 </article>
               );
             })}
