@@ -77,14 +77,14 @@ const Tips = () => {
                     >
                       {t("Ouvrir le guide (PDF) →", "Open de gids (PDF) →")}
                     </a>
-                  ) : i === 3 && lang === "nl" ? (
+                  ) : i === 3 ? (
                     <a
-                      href="/nazorg-injecties.pdf"
+                      href={lang === "fr" ? "/soins-apres-injections.pdf" : "/nazorg-injecties.pdf"}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block text-sm text-accent hover:opacity-80 underline"
                     >
-                      Open de gids (PDF) →
+                      {t("Ouvrir le guide (PDF) →", "Open de gids (PDF) →")}
                     </a>
                   ) : i === 4 && lang === "nl" ? (
                     <a
