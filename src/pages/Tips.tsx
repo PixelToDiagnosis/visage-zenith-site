@@ -53,7 +53,9 @@ const Tips = () => {
                   {i === 0 && lang === "nl" ? (
                     <a
                       href="/anti-aging-tips.pdf"
-                      download
+                      download="anti-aging-tips.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-block text-sm text-accent hover:opacity-80 underline"
                     >
                       Download de gids (PDF) →
