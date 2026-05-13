@@ -46,14 +46,14 @@ const FreePage = () => {
           <Download className="w-10 h-10 text-gold mx-auto mb-6" />
           <h2 className="font-serif text-2xl mb-4">
             {t(
-              "Comment préparer votre première consultation esthétique",
-              "Hoe u uw eerste esthetische consultatie voorbereidt"
+              "Le guide des actifs skincare",
+              "De gids voor actieve skincare-ingrediënten"
             )}
           </h2>
           <p className="body-small mb-8">
             {t(
-              "Un guide pratique pour aborder sereinement votre première consultation : questions à poser, attentes réalistes et points clés à préparer.",
-              "Een praktische gids om uw eerste consultatie sereen aan te pakken: te stellen vragen, realistische verwachtingen en belangrijke voorbereidingspunten."
+              "Découvrez les ingrédients actifs essentiels et leur rôle dans votre routine beauté.",
+              "Ontdek de essentiële actieve ingrediënten en hun rol in uw beauty-routine."
             )}
           </p>
 
