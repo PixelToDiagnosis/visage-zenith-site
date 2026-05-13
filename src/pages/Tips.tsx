@@ -95,14 +95,14 @@ const Tips = () => {
                     >
                       {t("Ouvrir le guide (PDF) →", "Open de gids (PDF) →")}
                     </a>
-                  ) : i === 5 && lang === "nl" ? (
+                  ) : i === 5 ? (
                     <a
-                      href="/microneedling.pdf"
+                      href={lang === "fr" ? "/microneedling-fr.pdf" : "/microneedling.pdf"}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block text-sm text-accent hover:opacity-80 underline"
                     >
-                      Open de gids (PDF) →
+                      {t("Ouvrir le guide (PDF) →", "Open de gids (PDF) →")}
                     </a>
                   ) : (
                     <span className="text-sm text-accent cursor-pointer">{t("Lire la suite →", "Lees meer →")}</span>
