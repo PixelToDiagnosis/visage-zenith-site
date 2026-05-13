@@ -89,7 +89,7 @@ const Contact = () => {
                 <Phone className="w-5 h-5 text-gold mt-1" />
                 <div>
                   <p className="font-serif text-lg">{t("Téléphone", "Telefoon")}</p>
-                  <p className="body-small">+32 474 63 60 22</p>
+                  <p className="body-small">+32 456 83 13 40</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -109,7 +109,7 @@ const Contact = () => {
               </div>
 
               <a
-                href="https://wa.me/32474636022"
+                href="https://wa.me/32456831340"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-accent text-accent-foreground font-sans text-sm tracking-widest uppercase rounded-sm hover:opacity-90 transition-opacity"
