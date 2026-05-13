@@ -52,7 +52,7 @@ const Tips = () => {
                   <p className="body-small mb-4">{content.excerpt}</p>
                   {i === 0 ? (
                     <a
-                      href="/anti-aging-tips.pdf"
+                      href={lang === "fr" ? "/5-conseils-anti-age.pdf" : "/anti-aging-tips.pdf"}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block text-sm text-accent hover:opacity-80 underline"
