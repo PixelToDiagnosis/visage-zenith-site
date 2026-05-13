@@ -209,7 +209,7 @@ const Index = () => {
           <SectionHeading title="Contact" />
           <div className="grid sm:grid-cols-3 gap-8">
             {[
-              { label: t("Téléphone", "Telefoon"), value: "+32 474 63 60 22" },
+              { label: t("Téléphone", "Telefoon"), value: "+32 456 83 13 40" },
               { label: "Email", value: "dr.mbousmar@gmail.com" },
               { label: t("Adresse", "Adres"), value: t("2 avenue du Forum, 1020 Laeken", "Forumlaan 2, 1020 Laken") },
             ].map((item, i) => (
