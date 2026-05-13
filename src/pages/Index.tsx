@@ -208,16 +208,19 @@ const Index = () => {
         <div className="container-narrow text-center">
           <SectionHeading title="Contact" />
           <div className="grid sm:grid-cols-3 gap-8">
-            {[
-              { label: t("Adresse", "Adres"), value: t("11 Gildehof, 1730 Asse", "11 Gildehof, 1730 Asse") },
-              { label: t("Téléphone", "Telefoon"), value: "+32 456 83 13 40" },
-              { label: "Email", value: "dr.mbousmar@gmail.com" },
-            ].map((item, i) => (
-              <div key={i}>
-                <p className="font-serif text-lg mb-1">{item.label}</p>
-                <p className="body-small">{item.value}</p>
-              </div>
-            ))}
+            <div>
+              <p className="font-serif text-lg mb-1">{t("Téléphone", "Telefoon")}</p>
+              <p className="body-small">+32 456 83 13 40</p>
+            </div>
+            <div>
+              <p className="font-serif text-lg mb-1">Email</p>
+              <p className="body-small">dr.mbousmar@gmail.com</p>
+            </div>
+            <div>
+              <p className="font-serif text-lg mb-1">{t("Adresses", "Adressen")}</p>
+              <p className="body-small">11 Gildehof, 1730 Asse</p>
+              <p className="body-small mt-1">{t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken")}</p>
+            </div>
           </div>
         </div>
       </section>
