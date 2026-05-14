@@ -11,7 +11,7 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [lang, setLang] = useState<Language>("fr");
+  const [lang, setLang] = useState<Language>("nl");
 
   const t = useCallback((fr: string, nl: string) => (lang === "fr" ? fr : nl), [lang]);
 
