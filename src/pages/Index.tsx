@@ -184,7 +184,7 @@ const Index = () => {
       {/* CTA */}
       <section className="relative py-24 md:py-32">
         <div className="absolute inset-0">
-          <img src={consultationImage} alt="" className="w-full h-full object-cover object-right-top" />
+          <img src={consultationImage} alt="" className="w-full h-full object-cover" style={{ objectPosition: "center 80%" }} />
           <div className="absolute inset-0 bg-foreground/25" />
         </div>
         <div className="relative container-narrow text-center">
