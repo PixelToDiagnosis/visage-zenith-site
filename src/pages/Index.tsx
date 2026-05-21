@@ -28,7 +28,7 @@ const Index = () => {
       <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImage} alt={t("Clinique esthétique élégante", "Elegante esthetische kliniek")} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-foreground/40" />
+          <div className="absolute inset-0 bg-foreground/20" />
         </div>
         <div className="relative container-wide px-6 py-20">
           <div className="max-w-2xl">
