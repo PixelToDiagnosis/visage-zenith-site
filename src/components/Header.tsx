@@ -27,7 +27,7 @@ const Header = () => {
 
   const navItems = [
     { path: "/", label: t("Accueil", "Home") },
-    { path: "/tips", label: t("Conseils", "Tips") },
+    
     { path: "/services", label: t("Traitements", "Behandelingen"), dropdown: true },
     { path: "/testimonials", label: t("Témoignages", "Getuigenissen") },
     { path: "/about", label: t("À propos", "Over mij") },
