@@ -153,33 +153,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Tips Preview */}
-      <section className="section-padding bg-cream">
-        <div className="container-wide">
-          <SectionHeading
-            title={t("Conseils & Expertise", "Tips & Expertise")}
-            subtitle={t("Des articles pour prendre soin de votre peau", "Artikelen om voor uw huid te zorgen")}
-          />
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: t("Les 5 gestes anti-âge essentiels", "De 5 essentiële anti-aging tips"), cat: t("Anti-âge", "Anti-aging") },
-              { title: t("Botox : mythes et réalités", "Botox: mythes en feiten"), cat: "Botox" },
-              { title: t("Comment préparer sa peau avant un peeling", "Hoe bereidt u uw huid voor op een peeling"), cat: "Peelings" },
-            ].map((tip, i) => (
-              <div key={i} className="bg-off-white p-8 rounded-sm border border-border">
-                <span className="text-xs uppercase tracking-widest text-gold">{tip.cat}</span>
-                <h3 className="font-serif text-lg mt-2 mb-3">{tip.title}</h3>
-                <p className="body-small">{t("Lire l'article →", "Lees het artikel →")}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-10">
-            <CTAButton to="/tips" variant="outline">
-              {t("Tous les conseils", "Alle tips")}
-            </CTAButton>
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="relative py-24 md:py-32">
