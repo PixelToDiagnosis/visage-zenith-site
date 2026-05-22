@@ -132,26 +132,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Before/After */}
-      <section className="section-padding bg-off-white">
-        <div className="container-wide">
-          <SectionHeading
-            title={t("Résultats avant / après", "Resultaten voor / na")}
-            subtitle={t("Des transformations subtiles et naturelles", "Subtiele en natuurlijke transformaties")}
-          />
-          <div className="grid sm:grid-cols-3 gap-6">
-            {[t("Botox front", "Botox voorhoofd"), t("Lèvres", "Lippen"), t("Acide hyaluronique", "Hyaluronzuur")].map((label, i) => (
-              <div key={i} className="bg-beige rounded-sm aspect-[4/3] flex items-center justify-center">
-                <div className="text-center">
-                  <Clock className="w-8 h-8 text-taupe mx-auto mb-2" />
-                  <p className="body-small">{label}</p>
-                  <p className="text-xs text-taupe mt-1">{t("Bientôt disponible", "Binnenkort beschikbaar")}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
 
       {/* CTA */}
