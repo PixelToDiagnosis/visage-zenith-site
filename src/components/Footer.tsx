@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Instagram } from "lucide-react";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -63,6 +63,15 @@ const Footer = () => {
                 <MapPin className="w-4 h-4 opacity-70" />
                 <span className="text-sm opacity-70">{t("Forumlaan 2, 1020 Laeken", "Forumlaan 2, 1020 Laken")}</span>
               </div>
+              <a
+                href="https://instagram.com/dr_marie.eve"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 opacity-70 hover:opacity-100 transition-opacity pt-2"
+              >
+                <Instagram className="w-4 h-4" />
+                <span className="text-sm">@dr_marie.eve</span>
+              </a>
             </div>
           </div>
         </div>
