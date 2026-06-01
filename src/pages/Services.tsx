@@ -109,6 +109,13 @@ const Services = () => {
             </div>
           ))}
 
+        <div className="mt-10 p-6 bg-cream border border-border rounded-sm text-center">
+          <Wallet className="w-5 h-5 text-gold mx-auto mb-2" />
+          <p className="font-serif text-sm">
+            {t("Paiement : cash ou Payconiq", "Betaling : cash of Payconiq")}
+          </p>
+        </div>
+
         <div className="mt-16 overflow-hidden rounded-sm shadow-lg">
           <img
             src={treatmentImage}
