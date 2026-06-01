@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
-import { Sparkles, ChevronDown } from "lucide-react";
+import { Sparkles, ChevronDown, Wallet } from "lucide-react";
 import treatmentImage from "@/assets/treatment-injection.jpg";
 
 const services = [
