@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
-import { Sparkles, ChevronDown } from "lucide-react";
+import { Sparkles, ChevronDown, Wallet } from "lucide-react";
 import treatmentImage from "@/assets/treatment-injection.jpg";
 
 const services = [
@@ -108,6 +108,13 @@ const Services = () => {
               </div>
             </div>
           ))}
+
+        <div className="mt-10 p-6 bg-cream border border-border rounded-sm text-center">
+          <Wallet className="w-5 h-5 text-gold mx-auto mb-2" />
+          <p className="font-serif text-sm">
+            {t("Paiement : cash ou Payconiq", "Betaling : cash of Payconiq")}
+          </p>
+        </div>
 
         <div className="mt-16 overflow-hidden rounded-sm shadow-lg">
           <img
