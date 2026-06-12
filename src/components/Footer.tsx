@@ -79,7 +79,7 @@ const Footer = () => {
 
         <div className="mt-16 pt-8 border-t border-primary-foreground/10 text-center">
           <p className="text-xs opacity-50">
-            © {new Date().getFullYear()} Dr Marie-Eve Bousmar. {t("Tous droits réservés.", "Alle rechten voorbehouden.")}
+            © {new Date().getFullYear()} Gildehof Medical Aesthetics. {t("Tous droits réservés.", "Alle rechten voorbehouden.")}
           </p>
         </div>
       </div>
