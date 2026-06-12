@@ -10,7 +10,8 @@ const Footer = () => {
       <div className="container-wide section-padding">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           <div>
-            <h3 className="font-serif text-2xl font-light mb-4">Dr Marie-Eve Bousmar</h3>
+            <h3 className="font-serif text-2xl font-light mb-1">Gildehof Medical Aesthetics</h3>
+            <p className="font-serif text-sm font-light opacity-70 mb-4">by Dr Marie-Eve Bousmar</p>
             <p className="text-sm font-light opacity-70 leading-relaxed">
               {t(
                 "Médecine esthétique de qualité pour des résultats naturels et harmonieux.",
