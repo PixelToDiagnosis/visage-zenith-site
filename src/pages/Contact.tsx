@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
+import SEO from "@/components/SEO";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 const InstagramIcon = ({ className }: { className?: string }) => (

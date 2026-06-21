@@ -10,6 +10,13 @@ const AboutMe = () => {
 
   return (
     <>
+      <SEO
+        titleFr="À propos — Dr Marie-Eve Bousmar, médecin esthétique à Asse"
+        titleNl="Over mij — Dr Marie-Eve Bousmar, esthetisch arts in Asse"
+        descFr="Dr Marie-Eve Bousmar, médecin esthétique à Asse. Diplômée UCL, formée SAMBA. Approche naturelle pour Botox, fillers et skin boosters."
+        descNl="Dr Marie-Eve Bousmar, esthetisch arts in Asse. Afgestudeerd UCL, opgeleid SAMBA. Natuurlijke aanpak voor Botox, fillers en skin boosters."
+        path="/about"
+      />
       <section className="section-padding bg-off-white">
         <div className="container-wide grid md:grid-cols-2 gap-12 md:gap-20 items-stretch">
           <div className="overflow-hidden rounded-sm shadow-lg">
