@@ -101,6 +101,7 @@ const FreePage = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
