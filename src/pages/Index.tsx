@@ -1,6 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
+import SEO from "@/components/SEO";
 import heroImage from "@/assets/hero-clinic.jpg";
 import consultationImage from "@/assets/treatment-consultation.jpg";
 import { Star, Sparkles, Heart, Shield, Clock, Users } from "lucide-react";
