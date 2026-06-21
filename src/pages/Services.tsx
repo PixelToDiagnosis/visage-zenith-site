@@ -34,6 +34,14 @@ const Services = () => {
   };
 
   return (
+    <>
+      <SEO
+        titleFr="Traitements à Asse : Botox, fillers, skin boosters | Dr Bousmar"
+        titleNl="Behandelingen in Asse: Botox, fillers, skin boosters | Dr Bousmar"
+        descFr="Découvrez nos traitements esthétiques à Asse : Botox, acide hyaluronique, skin boosters, PRP, Rejuran, biostimulateurs de collagène."
+        descNl="Ontdek onze esthetische behandelingen in Asse: Botox, hyaluronzuur, skin boosters, PRP, Rejuran, collageenstimulatoren."
+        path="/services"
+      />
     <section className="section-padding bg-off-white">
       <div className="container-wide">
         <SectionHeading
