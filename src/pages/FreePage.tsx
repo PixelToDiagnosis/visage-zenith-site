@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
+import SEO from "@/components/SEO";
 import { Download } from "lucide-react";
 
 const FreePage = () => {
@@ -32,6 +33,14 @@ const FreePage = () => {
   };
 
   return (
+    <>
+      <SEO
+        titleFr="Guides gratuits — Médecine esthétique à Asse | Dr Bousmar"
+        titleNl="Gratis gidsen — Esthetische geneeskunde Asse | Dr Bousmar"
+        descFr="Téléchargez gratuitement nos guides : première consultation, Botox mythes & réalités, soins post-injection, peelings."
+        descNl="Download gratis onze gidsen: eerste consultatie, Botox mythes & feiten, nazorg na injecties, peelings."
+        path="/free"
+      />
     <section className="section-padding bg-off-white">
       <div className="container-narrow">
         <SectionHeading
@@ -92,6 +101,7 @@ const FreePage = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

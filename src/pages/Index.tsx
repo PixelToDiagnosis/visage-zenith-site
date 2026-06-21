@@ -1,6 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
+import SEO from "@/components/SEO";
 import heroImage from "@/assets/hero-clinic.jpg";
 import consultationImage from "@/assets/treatment-consultation.jpg";
 import { Star, Sparkles, Heart, Shield, Clock, Users } from "lucide-react";
@@ -24,6 +25,13 @@ const Index = () => {
 
   return (
     <>
+      <SEO
+        titleFr="Dr Marie-Eve Bousmar — Médecin esthétique à Asse | Botox, fillers, skin boosters"
+        titleNl="Dr Marie-Eve Bousmar — Esthetisch arts in Asse | Botox, fillers, skin boosters"
+        descFr="Médecin esthétique à Asse : Botox, acide hyaluronique, skin boosters, biostimulateurs. Résultats naturels par Dr Marie-Eve Bousmar. Première consultation gratuite."
+        descNl="Esthetisch arts in Asse: Botox, hyaluronzuur fillers, skin boosters, biostimulatoren. Natuurlijke resultaten door Dr Marie-Eve Bousmar. Eerste consultatie gratis."
+        path="/"
+      />
       {/* Hero */}
       <section className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">

@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
+import SEO from "@/components/SEO";
 
 const tips = [
   {
@@ -33,6 +34,13 @@ const Tips = () => {
 
   return (
     <>
+      <SEO
+        titleFr="Conseils & expertise — Médecine esthétique à Asse | Dr Bousmar"
+        titleNl="Tips & expertise — Esthetische geneeskunde Asse | Dr Bousmar"
+        descFr="Conseils d'experte sur Botox, fillers, skin boosters, peelings et microneedling par le Dr Marie-Eve Bousmar, Asse."
+        descNl="Expertadvies over Botox, fillers, skin boosters, peelings en microneedling door Dr Marie-Eve Bousmar, Asse."
+        path="/tips"
+      />
       <section className="section-padding bg-off-white">
         <div className="container-wide">
           <SectionHeading

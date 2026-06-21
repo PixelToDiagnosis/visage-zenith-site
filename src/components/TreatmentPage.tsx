@@ -1,6 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
+import SEO from "@/components/SEO";
 import { Clock, Shield, CheckCircle, Euro } from "lucide-react";
 
 export interface TreatmentData {
@@ -35,6 +36,33 @@ const TreatmentPage = ({ data }: { data: TreatmentData }) => {
 
   return (
     <>
+      <SEO
+        titleFr={`${data.titleFr} à Asse | Dr Marie-Eve Bousmar`}
+        titleNl={`${data.titleNl} in Asse | Dr Marie-Eve Bousmar`}
+        descFr={data.metaDescFr}
+        descNl={data.metaDescNl}
+        path={`/${data.slug}`}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "MedicalProcedure",
+          name: isFr ? data.titleFr : data.titleNl,
+          description: isFr ? data.metaDescFr : data.metaDescNl,
+          procedureType: "Cosmetic",
+          bodyLocation: "Face",
+          url: `https://www.drmarieevebousmar.be/${data.slug}`,
+          performer: {
+            "@type": "Physician",
+            name: "Dr Marie-Eve Bousmar",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Gildehof 11",
+              addressLocality: "Asse",
+              postalCode: "1730",
+              addressCountry: "BE",
+            },
+          },
+        }}
+      />
       {/* Hero */}
       <section className="section-padding bg-cream">
         <div className="container-narrow">

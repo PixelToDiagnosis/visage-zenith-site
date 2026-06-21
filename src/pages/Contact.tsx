@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
+import SEO from "@/components/SEO";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 const InstagramIcon = ({ className }: { className?: string }) => (
@@ -15,6 +16,13 @@ const Contact = () => {
 
   return (
     <>
+      <SEO
+        titleFr="Contact — Cabinet médecine esthétique à Asse | Dr Bousmar"
+        titleNl="Contact — Praktijk esthetische geneeskunde in Asse | Dr Bousmar"
+        descFr="Contactez le cabinet du Dr Marie-Eve Bousmar à Asse (Gildehof 11, 1730). Téléphone, WhatsApp, e-mail et plan d'accès."
+        descNl="Contacteer de praktijk van Dr Marie-Eve Bousmar in Asse (Gildehof 11, 1730). Telefoon, WhatsApp, e-mail en routebeschrijving."
+        path="/contact"
+      />
       <section className="section-padding bg-off-white">
         <div className="container-wide">
           <SectionHeading

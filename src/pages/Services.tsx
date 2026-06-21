@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SEO from "@/components/SEO";
 import SectionHeading from "@/components/SectionHeading";
 import { Sparkles, ChevronDown, Wallet } from "lucide-react";
 import treatmentImage from "@/assets/treatment-injection.jpg";
@@ -33,6 +34,14 @@ const Services = () => {
   };
 
   return (
+    <>
+      <SEO
+        titleFr="Traitements à Asse : Botox, fillers, skin boosters | Dr Bousmar"
+        titleNl="Behandelingen in Asse: Botox, fillers, skin boosters | Dr Bousmar"
+        descFr="Découvrez nos traitements esthétiques à Asse : Botox, acide hyaluronique, skin boosters, PRP, Rejuran, biostimulateurs de collagène."
+        descNl="Ontdek onze esthetische behandelingen in Asse: Botox, hyaluronzuur, skin boosters, PRP, Rejuran, collageenstimulatoren."
+        path="/services"
+      />
     <section className="section-padding bg-off-white">
       <div className="container-wide">
         <SectionHeading
@@ -125,6 +134,7 @@ const Services = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 
