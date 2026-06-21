@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import SEO from "@/components/SEO";
 import SectionHeading from "@/components/SectionHeading";
 import { Sparkles, ChevronDown, Wallet } from "lucide-react";
 import treatmentImage from "@/assets/treatment-injection.jpg";
