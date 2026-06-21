@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
+import SEO from "@/components/SEO";
 import { Star } from "lucide-react";
 
 const reviews = [
@@ -15,6 +16,14 @@ const Testimonials = () => {
   const { lang, t } = useLanguage();
 
   return (
+    <>
+      <SEO
+        titleFr="Avis patients — Dr Marie-Eve Bousmar, médecin esthétique Asse"
+        titleNl="Patiëntenervaringen — Dr Marie-Eve Bousmar, esthetisch arts Asse"
+        descFr="Témoignages de patients du Dr Marie-Eve Bousmar à Asse : Botox, fillers, skin boosters. Découvrez leurs expériences."
+        descNl="Ervaringen van patiënten van Dr Marie-Eve Bousmar in Asse: Botox, fillers, skin boosters. Lees hun verhalen."
+        path="/testimonials"
+      />
     <section className="section-padding bg-off-white">
       <div className="container-wide">
         <SectionHeading
