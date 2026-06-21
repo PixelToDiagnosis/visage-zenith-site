@@ -1,6 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import SectionHeading from "@/components/SectionHeading";
 import CTAButton from "@/components/CTAButton";
+import SEO from "@/components/SEO";
 import doctorImage from "@/assets/doctor-portrait.jpg";
 import { Award, GraduationCap, Heart } from "lucide-react";
 
