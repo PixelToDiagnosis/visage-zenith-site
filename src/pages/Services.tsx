@@ -23,6 +23,12 @@ const services = [
   { slug: "prp-cheveux-visage", fr: "PRP Cheveux & Visage", nl: "PRP Haar & Gezicht", descFr: "Régénération naturelle par plasma riche en plaquettes.", descNl: "Natuurlijke regeneratie door plaatjesrijk plasma." },
   { slug: "rejuran", fr: "Rejuran", nl: "Rejuran", descFr: "Régénération profonde de la peau par polynucléotides.", descNl: "Diepe huidregeneratie door polynucleotiden." },
   { slug: "inducteurs-de-collagene", fr: "Inducteurs de collagène", nl: "Collageenstimulators", descFr: "Stimulation naturelle du collagène pour une peau raffermie et régénérée.", descNl: "Natuurlijke stimulatie van collageen voor een stevigere en vernieuwde huid." },
+  {
+    slug: "peelings", fr: "Peelings", nl: "Peelings",
+    descFr: "Peelings médicaux réalisés en collaboration avec Pure Allure Asse.",
+    descNl: "Medische peelings uitgevoerd in samenwerking met Pure Allure Asse.",
+    externalUrl: "https://www.pureallure.be",
+  },
 ];
 
 const Services = () => {
