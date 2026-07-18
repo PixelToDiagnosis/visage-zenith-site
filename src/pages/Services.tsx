@@ -28,6 +28,8 @@ const services = [
     descFr: "Peelings médicaux réalisés en collaboration avec Pure Allure Asse.",
     descNl: "Medische peelings uitgevoerd in samenwerking met Pure Allure Asse.",
     externalUrl: "https://www.pureallure.be",
+    linkTextFr: "Découvrir Pure Allure Asse →",
+    linkTextNl: "Ontdek Pure Allure Asse →",
   },
 ];
 
@@ -60,22 +62,27 @@ const Services = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s) =>
             s.externalUrl ? (
-              <a
+              <div
                 key={s.slug}
-                href={s.externalUrl}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="group block bg-cream p-8 rounded-sm border border-border hover:shadow-lg transition-all duration-300 h-full"
               >
                 <div className="flex items-center justify-between mb-4">
                   <Sparkles className="w-6 h-6 text-gold" />
                   <ExternalLink className="w-4 h-4 text-muted-foreground" />
                 </div>
-                <h2 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
+                <h2 className="font-serif text-xl mb-2">
                   {lang === "fr" ? s.fr : s.nl}
                 </h2>
-                <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
-              </a>
+                <p className="body-small mb-4">{lang === "fr" ? s.descFr : s.descNl}</p>
+                <a
+                  href={s.externalUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 body-small text-accent hover:text-foreground transition-colors"
+                >
+                  {lang === "fr" ? s.linkTextFr : s.linkTextNl}
+                </a>
+              </div>
             ) : s.sub ? (
               <button
                 key={s.slug}
