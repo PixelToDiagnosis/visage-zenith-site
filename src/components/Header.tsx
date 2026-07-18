@@ -155,13 +155,26 @@ const Header = () => {
                 <div className="ml-4 mt-1 space-y-1">
                   {treatments.map((tr) => (
                     <div key={tr.slug}>
-                      <Link
-                        to={`/${tr.slug}`}
-                        className="block body-small text-muted-foreground py-2 font-medium"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {lang === "fr" ? tr.fr : tr.nl}
-                      </Link>
+                      {tr.externalUrl ? (
+                        <a
+                          href={tr.externalUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-between body-small text-muted-foreground py-2 font-medium"
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          <span>{lang === "fr" ? tr.fr : tr.nl}</span>
+                          <ExternalLink className="w-3 h-3 text-muted-foreground" />
+                        </a>
+                      ) : (
+                        <Link
+                          to={`/${tr.slug}`}
+                          className="block body-small text-muted-foreground py-2 font-medium"
+                          onClick={() => setMobileOpen(false)}
+                        >
+                          {lang === "fr" ? tr.fr : tr.nl}
+                        </Link>
+                      )}
                       {tr.sub?.map((sub) => (
                         <Link
                           key={sub.slug}
