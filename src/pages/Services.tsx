@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import SEO from "@/components/SEO";
 import SectionHeading from "@/components/SectionHeading";
-import { Sparkles, ChevronDown, Wallet } from "lucide-react";
+import { Sparkles, ChevronDown, Wallet, ExternalLink } from "lucide-react";
 import treatmentImage from "@/assets/treatment-injection.jpg";
 
 const services = [
@@ -23,6 +23,12 @@ const services = [
   { slug: "prp-cheveux-visage", fr: "PRP Cheveux & Visage", nl: "PRP Haar & Gezicht", descFr: "Régénération naturelle par plasma riche en plaquettes.", descNl: "Natuurlijke regeneratie door plaatjesrijk plasma." },
   { slug: "rejuran", fr: "Rejuran", nl: "Rejuran", descFr: "Régénération profonde de la peau par polynucléotides.", descNl: "Diepe huidregeneratie door polynucleotiden." },
   { slug: "inducteurs-de-collagene", fr: "Inducteurs de collagène", nl: "Collageenstimulators", descFr: "Stimulation naturelle du collagène pour une peau raffermie et régénérée.", descNl: "Natuurlijke stimulatie van collageen voor een stevigere en vernieuwde huid." },
+  {
+    slug: "peelings", fr: "Peelings", nl: "Peelings",
+    descFr: "Peelings médicaux réalisés en collaboration avec Pure Allure Asse.",
+    descNl: "Medische peelings uitgevoerd in samenwerking met Pure Allure Asse.",
+    externalUrl: "https://www.pureallure.be",
+  },
 ];
 
 const Services = () => {
@@ -53,7 +59,24 @@ const Services = () => {
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s) =>
-            s.sub ? (
+            s.externalUrl ? (
+              <a
+                key={s.slug}
+                href={s.externalUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-cream p-8 rounded-sm border border-border hover:shadow-lg transition-all duration-300 h-full"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <Sparkles className="w-6 h-6 text-gold" />
+                  <ExternalLink className="w-4 h-4 text-muted-foreground" />
+                </div>
+                <h2 className="font-serif text-xl mb-2 group-hover:text-accent transition-colors">
+                  {lang === "fr" ? s.fr : s.nl}
+                </h2>
+                <p className="body-small">{lang === "fr" ? s.descFr : s.descNl}</p>
+              </a>
+            ) : s.sub ? (
               <button
                 key={s.slug}
                 onClick={() => toggleSub(s.slug)}
