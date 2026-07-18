@@ -28,6 +28,8 @@ const services = [
     descFr: "Peelings médicaux réalisés en collaboration avec Pure Allure Asse.",
     descNl: "Medische peelings uitgevoerd in samenwerking met Pure Allure Asse.",
     externalUrl: "https://www.pureallure.be",
+    linkTextFr: "Découvrir Pure Allure Asse →",
+    linkTextNl: "Ontdek Pure Allure Asse →",
   },
 ];
 
