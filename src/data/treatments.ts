@@ -232,8 +232,8 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Wanneer zie ik resultaten?", a: "De eerste effecten verschijnen na enkele weken. De verbetering zet door gedurende enkele maanden naarmate het collageen herstelt." },
       { q: "Is de behandeling pijnlijk?", a: "Een verdovende crème wordt vooraf aangebracht voor uw comfort. De sensaties zijn goed te verdragen." },
     ],
-    priceFr: "3 séances à 300 € (espacées d'1 mois). La première consultation est informative et gratuite.",
-    priceNl: "3 sessies à 300 € (met 1 maand tussentijd). Het eerste consult is informatief en gratis.",
+    priceFr: "3 séances à 300 € (espacées d'1 mois). La première consultation est informative et gratuite. Les 50 € de la première consultation sont déduits du prix du traitement.",
+    priceNl: "3 sessies à 300 € (met 1 maand tussentijd). Het eerste consult is informatief en gratis. De 50 euro van de eerste consultatie wordt in mindering gebracht op de prijs van de behandeling.",
   },
   rejuran: {
     slug: "rejuran",
