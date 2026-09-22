@@ -17,7 +17,7 @@ const treatments = [
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters" },
   { slug: "prp-cheveux-visage", fr: "PRP Cheveux & Visage", nl: "PRP Haar & Gezicht" },
   { slug: "rejuran", fr: "Rejuran", nl: "Rejuran" },
-  { slug: "peelings", fr: "Peelings", nl: "Peelings", externalUrl: "https://www.pureallure.be" },
+  { slug: "peelings", fr: "Peelings", nl: "Peelings", to: "/services" },
 ];
 
 const Header = () => {
