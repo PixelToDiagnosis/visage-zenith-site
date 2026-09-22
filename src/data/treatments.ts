@@ -66,8 +66,8 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Hoe lang duren de resultaten?", a: "Tussen 12 en 18 maanden afhankelijk van de behandelde zone en het gebruikte product." },
       { q: "Is er een herstelperiode?", a: "Heel weinig. Lichte zwelling of roodheid kan 24-48 uur verschijnen." },
     ],
-    priceFr: "Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. Les 50 € de la première consultation sont déduits du prix du traitement. Prix indicatif : 350 €/ampoule.",
-    priceNl: "Tijdens het eerste consult stellen we samen een gepersonaliseerd behandelplan op en ontvangt u een offerte. De 50 euro van de eerste consultatie wordt in mindering gebracht op de prijs van de behandeling. Indicatieve prijs: 350 €/ampul.",
+    priceFr: "Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. Les 50 € de la première consultation sont déduits du prix du traitement. Prix indicatif : 320 €/ampoule.",
+    priceNl: "Tijdens het eerste consult stellen we samen een gepersonaliseerd behandelplan op en ontvangt u een offerte. De 50 euro van de eerste consultatie wordt in mindering gebracht op de prijs van de behandeling. Indicatieve prijs: 320 €/ampul.",
   },
   "injection-levres": {
     slug: "injection-levres",
@@ -149,8 +149,8 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Moet de plooi rechtstreeks worden opgevuld?", a: "Niet altijd. Vaak volstaat het herstellen van het volume van de jukbeenderen om de plooi te verminderen door het middengezicht te ondersteunen." },
       { q: "Hoe lang duren de resultaten?", a: "Tussen 12 en 18 maanden afhankelijk van het gebruikte product en uw metabolisme." },
     ],
-    priceFr: "Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. La première consultation est entièrement informative et gratuite. Prix indicatif : 350 €/ampoule.",
-    priceNl: "Tijdens het eerste consult stellen we samen een gepersonaliseerd behandelplan op en ontvangt u een offerte. Het eerste consult is volledig informatief en gratis. Indicatieve prijs: 350 €/ampul.",
+    priceFr: "Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. La première consultation est entièrement informative et gratuite. Prix indicatif : 320 €/ampoule.",
+    priceNl: "Tijdens het eerste consult stellen we samen een gepersonaliseerd behandelplan op en ontvangt u een offerte. Het eerste consult is volledig informatief en gratis. Indicatieve prijs: 320 €/ampul.",
   },
   cernes: {
     slug: "cernes",
