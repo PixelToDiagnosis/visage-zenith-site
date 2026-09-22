@@ -35,8 +35,8 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Wat is een touch-up?", a: "De touch-up is een klinische bijregeling die ongeveer 2 weken na de initiële injectie wordt uitgevoerd, tijdens de controleconsultatie. Het laat toe de spierrespons op de behandeling te evalueren en, indien nodig, de dosis of verdeling van het product aan te passen om een symmetrisch en harmonieus resultaat te bekomen. Deze bijregeling is inbegrepen in het tarief van de behandeling, binnen een termijn van maximum 2 weken na de injecties. Ze is niet van toepassing op injecties met hyaluronzuur (fillers), waarvan het resultaat onmiddellijk zichtbaar en tijdens de sessie aanpasbaar is." },
       { q: "Hoe vaak moet ik botox laten zetten?", a: "Het product is na ongeveer 3 maanden uitgewerkt, dus ongeveer om de 4-6 maand volgens uw behoeften." },
     ],
-    priceFr: "Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. Le prix dépend de la zone et du nombre d'unités. La première consultation est informative et gratuite. Prix indicatifs : Toxine botulique ≈ 100-150 € par zone.",
-    priceNl: "Tijdens het eerste consult stellen we samen een gepersonaliseerd behandelplan op en ontvangt u een offerte. De prijs hangt af van de zone en het aantal eenheden. Het eerste consult is informatief en gratis. Indicatieve prijzen: Botulinetoxine ≈ 100-150 € per zone.",
+    priceFr: "Lors de la première consultation, nous établirons ensemble un plan de traitement personnalisé et vous recevrez un devis. Le prix dépend de la zone et du nombre d'unités. La première consultation est informative et gratuite. Prix indicatifs : à partir de 150 euros, selon les unités et les zones.",
+    priceNl: "Tijdens het eerste consult stellen we samen een gepersonaliseerd behandelplan op en ontvangt u een offerte. De prijs hangt af van de zone en het aantal eenheden. Het eerste consult is informatief en gratis. Indicatieve prijzen: vanaf 150 euro, afhankelijk van units en zones.",
   },
   "acide-hyaluronique": {
     slug: "acide-hyaluronique",
