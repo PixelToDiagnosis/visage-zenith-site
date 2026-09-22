@@ -295,8 +295,7 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Quelle est la différence avec les fillers ?", a: "Les fillers à l'acide hyaluronique comblent et hydratent immédiatement, tandis que Sculptra agit en profondeur pour redensifier progressivement la peau de l'intérieur." },
       { q: "Quand vais-je voir les résultats ?", a: "Le résultat s'installe progressivement : les premiers effets apparaissent après quelques semaines et s'améliorent sur plusieurs mois." },
       { q: "Combien de temps dure le résultat ?", a: "Les résultats peuvent durer jusqu'à deux ans, avec un entretien possible par des séances de rappel." },
--    },
-+    },
+    ],
     faqNl: [
       { q: "Wat is Sculptra?", a: "Sculptra is een biostimulator op basis van poly-L-melkzuur die de natuurlijke collageenproductie stimuleert, in plaats van rimpels onmiddellijk op te vullen." },
       { q: "Wat is het verschil met fillers?", a: "Fillers met hyaluronzuur vullen onmiddellijk op en hydrateren, terwijl Sculptra diep werkt om de huid geleidelijk van binnenuit te verdichten." },
