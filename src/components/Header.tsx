@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Menu, X, ChevronDown, ExternalLink } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 const treatments = [
   { slug: "botox", fr: "Botox", nl: "Botox" },
@@ -17,7 +17,7 @@ const treatments = [
   { slug: "skin-boosters", fr: "Skin Boosters", nl: "Skin Boosters" },
   { slug: "prp-cheveux-visage", fr: "PRP Cheveux & Visage", nl: "PRP Haar & Gezicht" },
   { slug: "rejuran", fr: "Rejuran", nl: "Rejuran" },
-  { slug: "peelings", fr: "Peelings", nl: "Peelings", externalUrl: "https://www.pureallure.be" },
+  { slug: "peelings", fr: "Peelings", nl: "Peelings", to: "/services" },
 ];
 
 const Header = () => {
@@ -65,24 +65,12 @@ const Header = () => {
                     <div className="bg-off-white border border-border rounded-sm shadow-lg py-2">
                       {treatments.map((tr) => (
                         <div key={tr.slug}>
-                          {tr.externalUrl ? (
-                            <a
-                              href={tr.externalUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flex items-center justify-between px-4 py-2 body-small font-medium hover:bg-beige transition-colors"
-                            >
-                              <span>{lang === "fr" ? tr.fr : tr.nl}</span>
-                              <ExternalLink className="w-3 h-3 text-muted-foreground" />
-                            </a>
-                          ) : (
-                            <Link
-                              to={`/${tr.slug}`}
-                              className="block px-4 py-2 body-small font-medium hover:bg-beige transition-colors"
-                            >
-                              {lang === "fr" ? tr.fr : tr.nl}
-                            </Link>
-                          )}
+                          <Link
+                            to={tr.to ?? `/${tr.slug}`}
+                            className="block px-4 py-2 body-small font-medium hover:bg-beige transition-colors"
+                          >
+                            {lang === "fr" ? tr.fr : tr.nl}
+                          </Link>
                           {tr.sub?.map((sub) => (
                             <Link
                               key={sub.slug}
@@ -155,26 +143,13 @@ const Header = () => {
                 <div className="ml-4 mt-1 space-y-1">
                   {treatments.map((tr) => (
                     <div key={tr.slug}>
-                      {tr.externalUrl ? (
-                        <a
-                          href={tr.externalUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center justify-between body-small text-muted-foreground py-2 font-medium"
-                          onClick={() => setMobileOpen(false)}
-                        >
-                          <span>{lang === "fr" ? tr.fr : tr.nl}</span>
-                          <ExternalLink className="w-3 h-3 text-muted-foreground" />
-                        </a>
-                      ) : (
-                        <Link
-                          to={`/${tr.slug}`}
-                          className="block body-small text-muted-foreground py-2 font-medium"
-                          onClick={() => setMobileOpen(false)}
-                        >
-                          {lang === "fr" ? tr.fr : tr.nl}
-                        </Link>
-                      )}
+                      <Link
+                        to={tr.to ?? `/${tr.slug}`}
+                        className="block body-small text-muted-foreground py-2 font-medium"
+                        onClick={() => setMobileOpen(false)}
+                      >
+                        {lang === "fr" ? tr.fr : tr.nl}
+                      </Link>
                       {tr.sub?.map((sub) => (
                         <Link
                           key={sub.slug}
