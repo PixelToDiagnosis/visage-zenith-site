@@ -232,8 +232,8 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Wanneer zie ik resultaten?", a: "De eerste effecten verschijnen na enkele weken. De verbetering zet door gedurende enkele maanden naarmate het collageen herstelt." },
       { q: "Is de behandeling pijnlijk?", a: "Een verdovende crème wordt vooraf aangebracht voor uw comfort. De sensaties zijn goed te verdragen." },
     ],
-    priceFr: "3 séances à 300 € (espacées d'1 mois). La première consultation est informative et gratuite. Les 50 € de la première consultation sont déduits du prix du traitement.",
-    priceNl: "3 sessies à 300 € (met 1 maand tussentijd). Het eerste consult is informatief en gratis. De 50 euro van de eerste consultatie wordt in mindering gebracht op de prijs van de behandeling.",
+    priceFr: "3 séances à 280 € (espacées d'1 mois). La première consultation est informative et gratuite. Les 50 € de la première consultation sont déduits du prix du traitement.",
+    priceNl: "3 sessies à 280 € (met 1 maand tussentijd). Het eerste consult is informatief en gratis. De 50 euro van de eerste consultatie wordt in mindering gebracht op de prijs van de behandeling.",
   },
   rejuran: {
     slug: "rejuran",
@@ -267,7 +267,7 @@ export const treatmentsData: Record<string, TreatmentData> = {
       { q: "Wat is het verschil met skin boosters?", a: "In tegenstelling tot skin boosters die voornamelijk hydrateren, werkt Rejuran op cellair niveau om de huid diep te repareren en te regenereren." },
       { q: "Is de behandeling geschikt voor gevoelige huid?", a: "Ja, Rejuran is bijzonder goed verdragen en geschikt voor gevoelige huid dankzij zijn biocompatible samenstelling." },
     ],
-    priceFr: "3 séances à 300 € (espacées d'1 mois). La première consultation est informative et gratuite. Les 50 € de la première consultation sont déduits du prix du traitement.",
-    priceNl: "3 sessies à 300 € (met 1 maand tussentijd). Het eerste consult is informatief en gratis. De 50 euro van de eerste consultatie wordt in mindering gebracht op de prijs van de behandeling.",
+    priceFr: "3 séances à 280 € (espacées d'1 mois). La première consultation est informative et gratuite. Les 50 € de la première consultation sont déduits du prix du traitement.",
+    priceNl: "3 sessies à 280 € (met 1 maand tussentijd). Het eerste consult is informatief en gratis. De 50 euro van de eerste consultatie wordt in mindering gebracht op de prijs van de behandeling.",
   },
 };
