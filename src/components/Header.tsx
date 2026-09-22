@@ -65,24 +65,12 @@ const Header = () => {
                     <div className="bg-off-white border border-border rounded-sm shadow-lg py-2">
                       {treatments.map((tr) => (
                         <div key={tr.slug}>
-                          {tr.externalUrl ? (
-                            <a
-                              href={tr.externalUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="flex items-center justify-between px-4 py-2 body-small font-medium hover:bg-beige transition-colors"
-                            >
-                              <span>{lang === "fr" ? tr.fr : tr.nl}</span>
-                              <ExternalLink className="w-3 h-3 text-muted-foreground" />
-                            </a>
-                          ) : (
-                            <Link
-                              to={`/${tr.slug}`}
-                              className="block px-4 py-2 body-small font-medium hover:bg-beige transition-colors"
-                            >
-                              {lang === "fr" ? tr.fr : tr.nl}
-                            </Link>
-                          )}
+                          <Link
+                            to={tr.to ?? `/${tr.slug}`}
+                            className="block px-4 py-2 body-small font-medium hover:bg-beige transition-colors"
+                          >
+                            {lang === "fr" ? tr.fr : tr.nl}
+                          </Link>
                           {tr.sub?.map((sub) => (
                             <Link
                               key={sub.slug}
