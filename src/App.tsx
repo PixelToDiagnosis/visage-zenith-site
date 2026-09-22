@@ -19,7 +19,8 @@ const queryClient = new QueryClient();
 
 const treatmentSlugs = [
   "botox", "acide-hyaluronique", "injection-levres", "jawline", "cernes",
-  "sillons-nasogeniens", "skin-boosters", "prp-cheveux-visage", "rejuran"
+  "sillons-nasogeniens", "skin-boosters", "prp-cheveux-visage", "rejuran",
+  "inducteurs-de-collagene"
 ];
 
 const App = () => (
