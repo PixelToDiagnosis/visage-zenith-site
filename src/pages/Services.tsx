@@ -59,6 +59,22 @@ const Services = () => {
             "Een compleet gamma esthetische behandelingen om uw natuurlijke schoonheid te verbeteren."
           )}
         />
+        <div className="mb-6 bg-cream p-8 rounded-sm border border-border">
+          <div className="flex items-start gap-4">
+            <Sparkles className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+            <div>
+              <h2 className="font-serif text-xl mb-2">
+                {t("Première consultation", "Eerste consultatie")}
+              </h2>
+              <p className="body-small">
+                {t(
+                  "Analyse de votre visage et de vos souhaits, avec élaboration d'un plan de traitement et d'un devis personnalisé. Prix : 50 euros. Les 50 € de cette consultation sont déduits du prix du traitement.",
+                  "Analyse van uw gezicht en uw wensen, met opmaak van een persoonlijk behandel- en prijsvoorstel. Prijs: 50 euro. De 50 euro van deze consultatie wordt in mindering gebracht op de prijs van de behandeling."
+                )}
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s) =>
             s.externalUrl ? (
