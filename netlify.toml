@@ -1,0 +1,11 @@
+# Netlify build settings for drmarieevebousmar.be
+[build]
+  # The project uses Bun (bun.lock); the prebuild step regenerates the sitemap with bunx.
+  command = "bun run build"
+  publish = "dist"
+
+# Single-page app: serve index.html for every page so direct links and refreshes work.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
